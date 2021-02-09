@@ -1,45 +1,226 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Calm</h1> 
 
-Welcome USER_NAME,
+## IMAGE OF MOCKUP DEVICES
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
-## Gitpod Reminders
+<p align="center"><strong>Milestone 3 project - Full Stack Web Developer course - Code Institute</strong></p>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This website is developed for users who wants to find artists who makes calm music, could be for relaxing and/or focusing for example. It is based on every users contributions and you will be able to read others posts as well as add, delete and edit posts of your own.
 
-`python3 -m http.server`
+## LINK TO DEPLOYED WEBSITE HERE
+ 
+## UX
 
-A blue button should appear to click: *Make Public*,
+### User Stories
 
-Another blue button should appear to click: *Open Browser*.
+See below user stories:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+> *- "As a visitor of the website, I expect to... , so I can..."*
 
-A blue button should appear to click: *Make Public*,
+### Strategy
 
-Another blue button should appear to click: *Open Browser*.
+TEXT HERE
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Project goals: 
 
-## Updates Since The Instructional Video
+- 
+- 
+- 
+- 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Scope
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The features of this website will let the users:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- 
+- 
+- 
+- 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Structure
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+TEXT HERE
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Skeleton
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+WIREFRAME LINK HERE
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+6 pages included in the wireframe which are:
+- 
+- 
+- 
+- 
+- 
+-
 
---------
+### Surface
 
-Happy coding!
+#### Main inspiration
+ 
+TEXT HERE
+
+#### Fonts
+
+TEXT HERE
+
+PIC OF FONT HERE
+
+#### Colors
+
+TEXT HERE
+
+I have therefore focused on below colors: - UPDATE THIS
+
+- #e74c3c
+- #ffffff
+- #4f97c7 
+- #000000
+
+PIC OF COLOR PALETTE HERE
+
+## Features
+
+ 
+### Existing Features
+
+- 
+
+### Features Left to Implement
+
+- 
+
+## Technologies Used 
+## UPDATE THIS
+
+**Languages** 
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - Markup language
+
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+    - Main programming language
+    
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - Main programming language
+
+**Frameworks**
+
+- [Bootstrap](https://getbootstrap.com/)
+    - Framework used in order to improve the structure of the website. Connected to HTML via CDN
+
+- [jQuery](https://jquery.com/)
+    - Framework used with JavaScript in order to simplify the code. Connected to HTML via CDN
+
+**Version control**
+
+- [GitHub](https://github.com/)
+    - Used for version control of the project
+
+**Other**
+
+- [VSCode](https://code.visualstudio.com/)
+   - IDE which was used for the project. Directly linked to repository through GitHub
+
+- [Google Fonts](https://fonts.google.com/)
+   - Used for all the fonts in the project. Connected to CSS via @import
+   
+- [Font Awesome](https://fontawesome.com/)
+   - Used for all the icons in the project. Connected to HTML via CDN
+
+- [Unsplash](https://unsplash.com/)
+   - Used for images in the project. Imported locally through assets/img
+
+- [Canva](https://www.canva.com/)
+   - Used for images and making icons. Imported locally through assets/img
+   
+
+## Testing 
+## UPDATE THIS SECTION
+
+I have done a lot of testing throughout the project and below you will find it in a more structured manner. I have made sure that the user stories are tested and works well, also focused on responsiveness where I have used resources online as well as the physical devices I had access to.
+
+### Tests done in order to secure user stories
+
+| Test | Method | Result |
+| ---- | ------ | ------ |
+
+### Bugs
+
+| Bug | Solution | Current status |
+| --- | -------- | -------------- |
+
+
+### Browser and screen size responsiveness
+
+Have done extensive testing in Chrome DevTools, different browsers as well as on physical devices I had access to. The website is responsive and it acts as it is supposed to when changing between devices, browsers and screen sizes.
+
+**Websites used for testing on different screen sizes (other than what is mentioned above):**
+
+- [whatismyscreenresolution.net](http://whatismyscreenresolution.net/multi-screen-test)
+- [responsivetesttool.com](http://responsivetesttool.com/)
+
+### HTML Validator (W3C Markup) - [Link](https://validator.w3.org)
+
+Pushed my HTML code through the validator and got following messages which I corrected:
+
+| Message | Solution |
+| ------- | -------- |
+
+All errors and warnings are now gone.
+
+### CSS Validator (W3C CSS) - [Link](https://jigsaw.w3.org/css-validator)
+
+| Message | Solution |
+| ------- | -------- |
+
+### JSHint - [Link](https://jshint.com/)
+
+Pushed my JavaScript code through JSHint where no major issues showed up.
+
+### TESTING FOR PYTHON SQL ETC.
+
+## Deployment
+
+In order to deploy my website I used GitHub pages. The deployment was made from the master branch and I did it through below steps:
+
+ 1. Enter GitHub website and log in
+ 2. Go to my GitHub repository called **CI-MS3-calm-music**
+ 3. Press **settings**
+ 4. Scroll down to GitHub Pages section
+ 5. Choose the "master branch" under **Source** and "/ (root)" under **Select folder**
+ 6. Press **save** and the website is deployed under the domain https://github.com/rudberga/CI-MS3-calm-music
+
+### Running my project locally
+
+In order to run the project locally you should firstly enter my repository by the link https://github.com/rudberga/CI-MS3-calm-music.
+ 
+1. Click the button **Code**
+2. Choose either **HTTPS**, **SSH** or **GitHub CLI**, then click the copy icon to the right of the link
+3. You will then open the terminal in your IDE
+4. Type `git clone` and then paste the URL you copied
+5. Press **Enter** and you will have created a local clone
+
+You could also have it open directly in Gitpod if you are using it, see below:
+
+1. Open the repository https://github.com/rudberga/CI-MS3-calm-music
+2. Click the green **Gitpod** button 
+3. Gitpod will now open up a new workspace with the code from this project
+
+## Credits
+
+### Content
+
+- 
+
+### Media
+- 
+
+### Code
+
+I have modified these code snippets in order for them to work in my project.
+- EXAMPLE: Hovering effect on links in top 3 list: [CSS Tricks](https://css-tricks.com/having-fun-with-link-hover-effects)
+
+
+### Acknowledgements
+
+- I want to thank my mentor **Nishant Kumar** for the support and advice throughout the project
