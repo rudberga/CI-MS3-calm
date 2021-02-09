@@ -189,11 +189,11 @@ In order to deploy my website I used GitHub pages. The deployment was made from 
  3. Press **settings**
  4. Scroll down to GitHub Pages section
  5. Choose the "master branch" under **Source** and "/ (root)" under **Select folder**
- 6. Press **save** and the website is deployed under the domain https://github.com/rudberga/CI-MS3-calm-music
+ 6. Press **save** and the website is deployed under the domain https://github.com/rudberga/CI-MS3-calm
 
 ### Running my project locally
 
-In order to run the project locally you should firstly enter my repository by the link https://github.com/rudberga/CI-MS3-calm-music.
+In order to run the project locally you should firstly enter my repository by the link https://github.com/rudberga/CI-MS3-calm.
  
 1. Click the button **Code**
 2. Choose either **HTTPS**, **SSH** or **GitHub CLI**, then click the copy icon to the right of the link
@@ -203,7 +203,7 @@ In order to run the project locally you should firstly enter my repository by th
 
 You could also have it open directly in Gitpod if you are using it, see below:
 
-1. Open the repository https://github.com/rudberga/CI-MS3-calm-music
+1. Open the repository https://github.com/rudberga/CI-MS3-calm
 2. Click the green **Gitpod** button 
 3. Gitpod will now open up a new workspace with the code from this project
 
