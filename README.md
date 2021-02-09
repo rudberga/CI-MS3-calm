@@ -32,10 +32,11 @@ Project goals:
 
 The features of this website will let the users:
 
-- 
-- 
-- 
-- 
+- Find artists through the artist page
+- Search for artist in the search bar based on name, genre or nationality
+- Register your own account so you can log in and contribute to the website
+- Add artists for suggestion to other users, edit and delete them as well
+- Direct links to Spotify and Apple Music for easier navigation to listen to the artist
 
 ### Structure
 
@@ -83,7 +84,7 @@ PIC OF COLOR PALETTE HERE
  
 ### Existing Features
 
-- 
+- **Social links**: in the footer you will find the icons for Inspiry's different social platforms
 
 ### Features Left to Implement
 
