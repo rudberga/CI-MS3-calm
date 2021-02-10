@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calm</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
     {% for artist in artists %}
         {{ artist.artist_name }}<br>
         {{ artist.genre_name }}<br>
@@ -14,5 +9,5 @@
         {{ artist.vocals }}<br>
         {{ artist.image }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
