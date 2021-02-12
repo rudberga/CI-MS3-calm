@@ -22,7 +22,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
                 <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Logout</a></li>
@@ -34,7 +34,7 @@
     <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ url_for('get_home') }}"><h4>Calm</h4></a></li>
         <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+        <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
         <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
         <li><a href="#">Profile</a></li>
         <li><a href="#">Logout</a></li>
