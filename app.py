@@ -55,7 +55,7 @@ def sign_up():
         return redirect(url_for("profile",username=session["user"]))
     return render_template("sign_up.html")
 
-
+# Log in functionality
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -83,13 +83,25 @@ def login():
     
     return render_template("login.html")
 
-
+# Profile page functionality
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # Grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+
+    if session["user"]:
+        return render_template("profile.html", username=username)
+
+    return redirect(url_for("login"))
+
+# Log out functionality
+@app.route("/logout")
+def logout():
+    # Remove user from session cookie
+    flash("You have been logged out!")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":
