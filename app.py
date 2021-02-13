@@ -27,7 +27,7 @@ def get_home():
 
 @app.route("/get_artists")
 def get_artists():
-    artists = mongo.db.artists.find()
+    artists = list(mongo.db.artists.find())
     return render_template("artists.html", artists=artists)
 
 
