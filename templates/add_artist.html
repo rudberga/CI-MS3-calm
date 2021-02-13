@@ -7,14 +7,54 @@
     <form class="col s12" method="POST" action="">
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">First Name</label>
+                <i class="fas fa-pencil-alt prefix"></i>
+                <input id="artist_name" name="artist_name" minlength="2" maxlength="50" type="text" class="validate"
+                    required>
+                <label for="artist_name">Artist Name</label>
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
+                <i class="fas fa-align-left prefix"></i>
+                <textarea id="age" name="age" minlength="1" maxlength="3"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="age">Age</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix"></i>
+                <textarea id="nationality" name="nationality" minlength="1" maxlength="100"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="nationality">Nationality</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix"></i>
+                <textarea id="image" name="image" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="image">Image URL</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix"></i>
+                <textarea id="spotify" name="spotify" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="spotify">Spotify URL</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <div class="switch">
+                    <i class="fas fa-exclamation-circle prefix"></i>
+                    <label for="vocals">
+                        <input type="checkbox" id="vocals" name="vocals">
+                        <span class="lever"></span>
+                        Vocals
+                    </label>
+                </div>
             </div>
         </div>
     </form>
