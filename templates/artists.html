@@ -1,29 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% for artist in artists %}
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="{{ artist.image }}">
-    </div>
-    <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4"><strong>{{ artist.artist_name }}</strong>
-        <a href="{{ artist.spotify }}" target="_blank"><i class="fab fa-spotify"></i></a>
-        <p>{{ artist.genre_name }}</p>
-    </div>
-    <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4"><strong>{{ artist.artist_name }}</strong><i class="fas fa-times"></i></span>
-        <p>Genre: {{ artist.genre_name }}</p>
-        <p>Age: {{ artist.age }}</p>
-        <p>Nationality: {{ artist.nationality }}</p>
-        {% if artist.vocals == "on" %}
-            Vocals:<i class="fas fa-microphone"></i>
-        {% endif %}
-        {% if artist.vocals == "off" %}
-            Vocals:<i class="fas fa-microphone-slash"></i>
-        {% endif %}
-    </div>
+<div class="title-artists center-align">
+    <h1>Artists</h1>
 </div>
-{% endfor %}
+
+<div class="row">
+    {% for artist in artists %}
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{ artist.image }}">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>{{ artist.artist_name }}</strong>
+                    <a href="{{ artist.spotify }}" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <p>{{ artist.genre_name }}</p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>{{ artist.artist_name }} </strong><i
+                        class="fas fa-chevron-down right"></i></span>
+                <p>Genre: {{ artist.genre_name }}</p>
+                <p>Age: {{ artist.age }}</p>
+                <p>Nationality: {{ artist.nationality }}</p>
+                {% if artist.vocals == "on" %}
+                Vocals:<i class="fas fa-microphone"></i>
+                {% endif %}
+                {% if artist.vocals == "off" %}
+                Vocals:<i class="fas fa-microphone-slash"></i>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}

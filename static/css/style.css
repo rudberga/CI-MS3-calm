@@ -35,10 +35,6 @@ main {
 
 /*--------------------------------- Artist cards */
 
-.card {
-    width: 35%;
-}
-
 .card-content i {
     color: #1DB954;
 }
