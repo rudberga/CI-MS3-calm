@@ -7,6 +7,17 @@
     <form class="col s12" method="POST" action="">
         <div class="row">
             <div class="input-field col s12">
+                <select id="genre_name" name="genre_name" class="validate" required>
+                    <option value="" disabled selected>Genres</option>
+                    {% for genre in genres %}
+                        <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
+                    {% endfor %}
+                </select>
+                <label for="genre_name">Choose genre</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix"></i>
                 <input id="artist_name" name="artist_name" minlength="2" maxlength="50" type="text" class="validate"
                     required>
@@ -24,8 +35,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix"></i>
-                <textarea id="image" name="image" minlength="5" maxlength="200"
-                    class="materialize-textarea validate" required></textarea>
+                <textarea id="image" name="image" minlength="5" maxlength="200" class="materialize-textarea validate"
+                    required></textarea>
                 <label for="image">Image URL</label>
             </div>
         </div>

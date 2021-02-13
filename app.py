@@ -106,7 +106,8 @@ def logout():
 
 @app.route("/add_artist")
 def add_artist():
-    return render_template("add_artist.html")
+    genres= mongo.db.genres.find().sort("genre_name", 1)
+    return render_template("add_artist.html", genres=genres)
 
 
 if __name__ == "__main__":
