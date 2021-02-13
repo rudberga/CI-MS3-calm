@@ -11,9 +11,9 @@
 </div>
 <div class="row btn-landing">
     <div class="col">
-        <a class="waves-effect btn">Login</a>
+        <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn">Login</a>
         <span>or</span>
-        <a class="waves-effect btn">Sign up</a>
+        <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn">Sign up</a>
     </div>
 </div>
 
