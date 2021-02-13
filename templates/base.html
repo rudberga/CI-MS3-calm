@@ -42,8 +42,8 @@
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="{{ url_for('logout') }}">Logout</a></li>
         {% else %}
-            <li><a href="{{ url_for('login') }}">Login</a></li>
-            <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
+            <li><a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger">Login</a></li>
+            <li><a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger">Sign Up</a></li>
             <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
         {% endif %}
     </ul>
