@@ -30,6 +30,13 @@ def get_artists():
     artists = list(mongo.db.artists.find())
     return render_template("artists.html", artists=artists)
 
+# Search functionality
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    artists = list(mongo.db.artists.find({"$text": {"$search": query}}))
+    return render_template("artists.html", artists=artists)
+
 
 # Sign up functionality
 @app.route("/sign_up", methods=["GET", "POST"])
