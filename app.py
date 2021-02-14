@@ -147,6 +147,13 @@ def edit_artist(artist_id):
     return render_template("edit_artist.html", artist=artist, genres=genres)
 
 
+@app.route("/delete_artist/<artist_id>")
+def delete_artist(artist_id):
+    mongo.db.artists.remove({"_id": ObjectId(artist_id)})
+    flash("Artist Successfully Deleted")
+    return redirect(url_for("get_artists"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
