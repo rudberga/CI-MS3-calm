@@ -53,7 +53,7 @@ def sign_up():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("profile",username=session["user"]))
-    return render_template("sign_up.html")
+    return render_template("index.html")
 
 # Log in functionality
 @app.route("/login", methods=["GET", "POST"])
@@ -81,7 +81,7 @@ def login():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
     
-    return render_template("login.html")
+    return render_template("index.html")
 
 # Profile page functionality
 @app.route("/profile/<username>", methods=["GET", "POST"])
