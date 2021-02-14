@@ -125,6 +125,13 @@ def add_artist():
     return render_template("add_artist.html", genres=genres)
 
 
+@app.route("/edit_artist/<artist_id>", methods=["GET", "POST"])
+def edit_artist(artist_id):
+    artist = mongo.db.artists.find_one({"_id": ObjectId(artist_id)})
+    genres = mongo.db.genres.find().sort("genre_name", 1)
+    return render_template("edit_artist.html", artist=artist, genres=genres)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
