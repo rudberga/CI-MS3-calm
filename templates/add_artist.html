@@ -4,7 +4,8 @@
 <h3 class="center-align">Add Artist</h3>
 
 <div class="row">
-    <form class="col s12" method="POST" action="">
+    <form class="col s12" method="POST" action="{{ url_for('add_artist') }}">
+        <!-- Genre options -->
         <div class="row">
             <div class="input-field col s12">
                 <select id="genre_name" name="genre_name" class="validate" required>
@@ -16,6 +17,7 @@
                 <label for="genre_name">Choose genre</label>
             </div>
         </div>
+        <!-- Artist name -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix"></i>
@@ -24,6 +26,7 @@
                 <label for="artist_name">Artist Name</label>
             </div>
         </div>
+        <!-- Nationality -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix"></i>
@@ -32,6 +35,7 @@
                 <label for="nationality">Nationality</label>
             </div>
         </div>
+        <!-- Image URL -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix"></i>
@@ -40,6 +44,7 @@
                 <label for="image">Image URL</label>
             </div>
         </div>
+        <!-- Spotify URL -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix"></i>
@@ -48,6 +53,7 @@
                 <label for="spotify">Spotify URL</label>
             </div>
         </div>
+        <!-- Vocals -->
         <div class="row">
             <div class="input-field col s12">
                 <div class="switch">
@@ -58,6 +64,14 @@
                         Vocals
                     </label>
                 </div>
+            </div>
+        </div>
+        <!-- Add button -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                    Add Artist <i class="fas fa-plus-square right"></i>
+                </button>
             </div>
         </div>
     </form>

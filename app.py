@@ -103,10 +103,25 @@ def logout():
     session.pop("user")
     return redirect(url_for("get_home"))
 
-
-@app.route("/add_artist")
+# Add artist functionality
+@app.route("/add_artist", methods=["GET", "POST"])
 def add_artist():
-    genres= mongo.db.genres.find().sort("genre_name", 1)
+    if request.method == "POST":
+        vocals = "on" if request.form.get("vocals") else "off"
+        artist = {
+            "genre_name": request.form.get("genre_name"),
+            "artist_name": request.form.get("artist_name"),
+            "nationality": request.form.get("nationality"),
+            "vocals": vocals,
+            "image": request.form.get("image"),
+            "spotify": request.form.get("spotify"),
+            "created_by": session["user"]
+        }
+        mongo.db.artists.insert_one(artist)
+        flash("Artist Successfully Added")
+        return redirect(url_for("add_artist"))
+
+    genres = mongo.db.genres.find().sort("genre_name", 1)
     return render_template("add_artist.html", genres=genres)
 
 
