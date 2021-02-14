@@ -101,7 +101,7 @@ def logout():
     # Remove user from session cookie
     flash("You have been logged out!")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("get_home"))
 
 
 @app.route("/add_artist")

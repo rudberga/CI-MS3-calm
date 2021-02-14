@@ -27,7 +27,7 @@
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
                 {% else %}
-                    <li><a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger">Login</a></li>
+                    <li><a href="" data-target="modal1" class="modal-trigger">Login</a></li>
                     <li><a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger">Sign Up</a></li>
                     <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
                 {% endif %}
@@ -71,6 +71,55 @@
         {% endblock %}
     </main>
 
+    <!-- Log in -->
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+
+            <h1 class="center-align">Log In</h1>
+
+            <div class="row">
+                <form class="col s12" method="POST" action="{{ url_for('login') }}">
+                    <!-- Username -->
+                    <div class="row">
+                        <div class="input-field col m8 offset-m2">
+                            <i class="fas fa-user-cog prefix"></i>
+                            <input id="username" name="username" type="text" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="row">
+                        <div class="input-field col m8 offset-m2">
+                            <i class="fas fa-key prefix"></i>
+                            <input id="password" name="password" type="password" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <!-- Log In button -->
+                    <div class="row">
+                        <div class="col m2 offset-m8">
+                            <button class="btn waves-effect waves-light" type="submit"> Log In </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align">
+                        New Here?
+                        <a href="{{ url_for('sign_up') }}">Register Account</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="page-footer-bg-color">
         <div class="socials-footer center-align">
             <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify hvr-fade"></i></a>
