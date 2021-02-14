@@ -119,7 +119,7 @@ def add_artist():
         }
         mongo.db.artists.insert_one(artist)
         flash("Artist Successfully Added")
-        return redirect(url_for("add_artist"))
+        return redirect(url_for("get_artists"))
 
     genres = mongo.db.genres.find().sort("genre_name", 1)
     return render_template("add_artist.html", genres=genres)
@@ -127,6 +127,21 @@ def add_artist():
 
 @app.route("/edit_artist/<artist_id>", methods=["GET", "POST"])
 def edit_artist(artist_id):
+    if request.method == "POST":
+        vocals = "on" if request.form.get("vocals") else "off"
+        submit = {
+            "genre_name": request.form.get("genre_name"),
+            "artist_name": request.form.get("artist_name"),
+            "nationality": request.form.get("nationality"),
+            "vocals": vocals,
+            "image": request.form.get("image"),
+            "spotify": request.form.get("spotify"),
+            "created_by": session["user"]
+        }
+        mongo.db.artists.update({"_id": ObjectId(artist_id)}, submit)
+        flash("Artist Successfully Updated!")
+        return redirect(url_for("get_artists"))
+
     artist = mongo.db.artists.find_one({"_id": ObjectId(artist_id)})
     genres = mongo.db.genres.find().sort("genre_name", 1)
     return render_template("edit_artist.html", artist=artist, genres=genres)
