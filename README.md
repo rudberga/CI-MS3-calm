@@ -5,9 +5,9 @@
 
 <p align="center"><strong>Milestone 3 project - Full Stack Web Developer course - Code Institute</strong></p>
 
-This website is developed for users who wants to find artists who makes calm music, could be for relaxing and/or focusing for example. It is based on every users contributions and you will be able to read others posts as well as add, delete and edit posts of your own.
+This website is developed for users who wants to find artists who makes calm music. Maybe you need it for a rainy day, when you have to focus on studying or just to fall asleep in the evening. For any reason there is, this website will help the user to find new artists and contribute by adding their own. It is based on user contributions and you will be able to read others artist cards as well as add, delete and edit your own posts.
 
-## LINK TO DEPLOYED WEBSITE HERE
+[Link to deployed website!](https://calm-music-project.herokuapp.com/)
  
 ## UX
 
