@@ -31,10 +31,10 @@ TEXT HERE
 
 Project goals: 
 
-- 
-- 
-- 
-- 
+- Design a website which not only is user friendly and modern, but also brings a sense of calm by the design choices
+- Present an inspiring page with artists cards where relevant info about the artist is included
+- Present a smooth way for the user to add, edit and delete their contributions
+- Give the user a simple way of registering, logging in and logging out
 
 ### Scope
 
