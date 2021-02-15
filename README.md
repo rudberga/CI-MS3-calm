@@ -15,7 +15,15 @@ This website is developed for users who wants to find artists who makes calm mus
 
 See below user stories:
 
-> *- "As a visitor of the website, I expect to... , so I can..."*
+> *- "As a user of the website, I expect to find a layout which is user friendly, so I easily can navigate throughout the website"*
+
+> *- "As a user of the website, I expect to be able to register an account, so I can add, edit and delete my own posts"*
+
+> *- "As a first time visitor of the website, I expect to be able to see artists without having to register, so I can get an idea of how the website works"*
+
+> *- "As a user of the website, I expect to have all my own posts gathered on my profile page, so I easily can get an overview of my contributions"*
+
+> *- "As a user of the website, I expect to , so I "*
 
 ### Strategy
 
