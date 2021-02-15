@@ -1,4 +1,6 @@
 /* MAKE VARIABLES OF COLORS */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
     display: flex;
@@ -11,12 +13,23 @@ main {
 }
 
 .brand-logo {
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-family: 'Pacifico', cursive;
+}
+
+nav .brand-logo {
+    font-size: 3.5rem;
 }
 
 .text-landing {
     margin-left: -20%;
     margin-top: 12%;
+    color: hsla(0, 0%, 100%, 0.827);
+}
+
+.text-landing h2 {
+    font-family: 'Dancing Script', cursive;
 }
 
 .btn-landing {
@@ -44,7 +57,7 @@ main {
 }
 
 .nav-wrapper ul li:hover {
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: none;
 }
 
 /*--------------------------------- Artist cards */
@@ -64,7 +77,7 @@ main {
 }
 
 .socials-footer {
-  font-size: 2em;
+  font-size: 2.25em;
   margin-right: 10px;
   width: 100%;
   margin-bottom: -25px;
