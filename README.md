@@ -5,9 +5,9 @@
 
 <p align="center"><strong>Milestone 3 project - Full Stack Web Developer course - Code Institute</strong></p>
 
-This website is developed for users who wants to find artists who makes calm music, could be for relaxing and/or focusing for example. It is based on every users contributions and you will be able to read others posts as well as add, delete and edit posts of your own.
+This website is developed for users who wants to find artists who makes calm music. Maybe you need it for a rainy day, when you have to focus on studying or just to fall asleep in the evening. For any reason there is, this website will help the user to find new artists and contribute by adding their own. It is based on user contributions and you will be able to read others artist cards as well as add, delete and edit your own posts.
 
-## LINK TO DEPLOYED WEBSITE HERE
+[Link to deployed website!](https://calm-music-project.herokuapp.com/)
  
 ## UX
 
@@ -15,18 +15,26 @@ This website is developed for users who wants to find artists who makes calm mus
 
 See below user stories:
 
-> *- "As a visitor of the website, I expect to... , so I can..."*
+> *- "As a user of the website, I expect to find a layout which is user friendly, so I easily can navigate throughout the website"*
+
+> *- "As a user of the website, I expect to be able to register an account, so I can add, edit and delete my own posts"*
+
+> *- "As a first time visitor of the website, I expect to be able to see artists without having to register, so I can get an idea of how the website works"*
+
+> *- "As a user of the website, I expect to have all my own posts gathered on my profile page, so I easily can get an overview of my contributions"*
+
+> *- "As a user of the website, I expect to ... , so I ..."*
 
 ### Strategy
 
-TEXT HERE
+The main goal of this website is to create a sort of hub where users can come to find new artist they have not heard about, and also contribute with their own. The focus is on calm music so the users can trust that they will only get those recommendations. Users will be able to check artist without creating an account, however, in order to add their own artists they need to create an account.
 
 Project goals: 
 
-- 
-- 
-- 
-- 
+- Design a website which not only is user friendly and modern, but also brings a sense of calm by the design choices
+- Present an inspiring page with artists cards where relevant info about the artist is included
+- Present a smooth way for the user to add, edit and delete their contributions
+- Give the user a simple way of registering, logging in and logging out
 
 ### Scope
 
@@ -36,7 +44,7 @@ The features of this website will let the users:
 - Search for artist in the search bar based on name, genre or nationality
 - Register your own account so you can log in and contribute to the website
 - Add artists for suggestion to other users, edit and delete them as well
-- Direct links to Spotify and Apple Music for easier navigation to listen to the artist
+- Include direct links to Spotify for easier navigation to listen to the artist
 
 ### Structure
 
@@ -91,7 +99,6 @@ PIC OF COLOR PALETTE HERE
 - 
 
 ## Technologies Used 
-## UPDATE THIS
 
 **Languages** 
 
@@ -101,13 +108,21 @@ PIC OF COLOR PALETTE HERE
 - [CSS](https://en.wikipedia.org/wiki/CSS)
     - Main programming language
     
+- [Python](https://www.python.org/)
+    - Main programming language
+    
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
     - Main programming language
+    
+**Database**
+
+- [MongoDB](https://www.mongodb.com/)
+    - Document based data framework to store the applications data
 
 **Frameworks**
 
-- [Bootstrap](https://getbootstrap.com/)
-    - Framework used in order to improve the structure of the website. Connected to HTML via CDN
+- [Materialize](https://materializecss.com/)
+    - Framework used in order to improve the structure and design of the website. Connected to HTML via CDN
 
 - [jQuery](https://jquery.com/)
     - Framework used with JavaScript in order to simplify the code. Connected to HTML via CDN
@@ -116,10 +131,15 @@ PIC OF COLOR PALETTE HERE
 
 - [GitHub](https://github.com/)
     - Used for version control of the project
+    
+**Cloud platform**
+
+- [Heroku](https://heroku.com/)
+    - Used for deploying and running application
 
 **Other**
 
-- [VSCode](https://code.visualstudio.com/)
+- [Gitpod](https://gitpod.io/)
    - IDE which was used for the project. Directly linked to repository through GitHub
 
 - [Google Fonts](https://fonts.google.com/)
@@ -132,7 +152,7 @@ PIC OF COLOR PALETTE HERE
    - Used for images in the project. Imported locally through assets/img
 
 - [Canva](https://www.canva.com/)
-   - Used for images and making icons. Imported locally through assets/img
+   - Used for making main icon. Imported locally through assets/img
    
 
 ## Testing 
