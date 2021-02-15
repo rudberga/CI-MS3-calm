@@ -99,7 +99,6 @@ PIC OF COLOR PALETTE HERE
 - 
 
 ## Technologies Used 
-## UPDATE THIS
 
 **Languages** 
 
@@ -109,13 +108,21 @@ PIC OF COLOR PALETTE HERE
 - [CSS](https://en.wikipedia.org/wiki/CSS)
     - Main programming language
     
+- [Python](https://www.python.org/)
+    - Main programming language
+    
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
     - Main programming language
+    
+**Database**
+
+- [MongoDB](https://www.mongodb.com/)
+    - Document based data framework to store the applications data
 
 **Frameworks**
 
-- [Bootstrap](https://getbootstrap.com/)
-    - Framework used in order to improve the structure of the website. Connected to HTML via CDN
+- [Materialize](https://materializecss.com/)
+    - Framework used in order to improve the structure and design of the website. Connected to HTML via CDN
 
 - [jQuery](https://jquery.com/)
     - Framework used with JavaScript in order to simplify the code. Connected to HTML via CDN
@@ -124,10 +131,15 @@ PIC OF COLOR PALETTE HERE
 
 - [GitHub](https://github.com/)
     - Used for version control of the project
+    
+**Cloud platform**
+
+- [Heroku](https://heroku.com/)
+    - Used for deploying and running application
 
 **Other**
 
-- [VSCode](https://code.visualstudio.com/)
+- [Gitpod](https://gitpod.io/)
    - IDE which was used for the project. Directly linked to repository through GitHub
 
 - [Google Fonts](https://fonts.google.com/)
@@ -140,7 +152,7 @@ PIC OF COLOR PALETTE HERE
    - Used for images in the project. Imported locally through assets/img
 
 - [Canva](https://www.canva.com/)
-   - Used for images and making icons. Imported locally through assets/img
+   - Used for making main icon. Imported locally through assets/img
    
 
 ## Testing 
