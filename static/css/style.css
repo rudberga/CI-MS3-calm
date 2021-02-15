@@ -35,8 +35,8 @@ main {
 
 /*--------------------------------- Navbar */
 
-.nav-wrapper {
-    background-color: #607d8b;
+.nav-shadow {
+    box-shadow: none!important;
 }
 
 /*--------------------------------- Artist cards */
