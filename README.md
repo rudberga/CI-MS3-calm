@@ -23,11 +23,11 @@ See below user stories:
 
 > *- "As a user of the website, I expect to have all my own posts gathered on my profile page, so I easily can get an overview of my contributions"*
 
-> *- "As a user of the website, I expect to , so I "*
+> *- "As a user of the website, I expect to ... , so I ..."*
 
 ### Strategy
 
-TEXT HERE
+The main goal of this website is to create a sort of hub where users can come to find new artist they have not heard about, and also contribute with their own. The focus is on calm music so the users can trust that they will only get those recommendations. Users will be able to check artist without creating an account, however, in order to add their own artists they need to create an account.
 
 Project goals: 
 
