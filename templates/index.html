@@ -2,21 +2,30 @@
 
 {% block content %}
 <body class="bg-landing">
-
-<div class="row text-landing">
-    <div class="col">
-        <h2>Looking for calm music?</h2>
-        <h5>Find new artists and add your own - get started below!</h5>
+<section>
+    <div class="row text-landing">
+        <div class="col">
+            <h2>Looking for calm music?</h2>
+            <h5>Find new artists and add your own - get started below!</h5>
+        </div>
     </div>
-</div>
-<div class="row btn-landing">
-    <div class="col">
-        <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn">Login</a>
-        <span>or</span>
-        <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn">Sign up</a>
+    <div class="row btn-landing">
+        <div class="col">
+            <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn">Login</a>
+            <span>or</span>
+            <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn">Sign up</a>
+        </div>
     </div>
-</div>
-
+</section>
+<!-- 
+<section class="bg-landing-white">
+    <div class="row">
+        <div class="col m6">
+            <h3>Latest artists</h3>
+        </div>
+    </div>
+</section>
+-->
 </body>
 
 {% endblock %}
