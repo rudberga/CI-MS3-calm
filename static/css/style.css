@@ -6,6 +6,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Barlow', sans-serif;
 }
 
 main {
@@ -62,6 +63,10 @@ main {
 
 .nav-shadow {
     box-shadow: none!important;
+}
+
+.hide-on-med-and-down li {
+    font-size: 3rem;
 }
 
 .nav-wrapper ul li:hover {
