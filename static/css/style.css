@@ -66,10 +66,11 @@ nav .brand-logo {
     color: #1DB954;
 }
 /*--------------------------------- Modals */
+/* CREDIT: Partly colored background: https://css-tricks.com/forums/topic/css-background-with-2-colors */
 
 .modal {
-    background-color: rgba(255, 255, 255, 0.863);
     border-radius: 10px;
+    background: linear-gradient(to right, #79a3b1 0%,#79a3b1 40%,#79a3b1 40%,white 40%,white 100%);
 }
 
 .modal h2 {

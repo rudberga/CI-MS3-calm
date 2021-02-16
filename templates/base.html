@@ -114,14 +114,16 @@
     <!-- Modal -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-
-            <h2 class="center-align">Welcome!</h2>
-
+            <div class="row">
+                <div class="col m7 offset-m5">
+                    <h2 class="center-align">Welcome!</h2>
+                </div>
+            </div>
             <div class="row">
                 <form class="col s12" method="POST" action="{{ url_for('login') }}">
                     <!-- Username -->
                     <div class="row">
-                        <div class="input-field col m8 offset-m2">
+                        <div class="input-field col m6 offset-m6">
                             <input id="username" name="username" type="text" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username">Username</label>
@@ -129,7 +131,7 @@
                     </div>
                     <!-- Password -->
                     <div class="row">
-                        <div class="input-field col m8 offset-m2">
+                        <div class="input-field col m6 offset-m6">
                             <input id="password" name="password" type="password" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="password">Password</label>
@@ -137,7 +139,7 @@
                     </div>
                     <!-- Log In button -->
                     <div class="row">
-                        <div class="col m2 offset-m8">
+                        <div class="col m6 offset-m6">
                             <button class="btn waves-effect waves-light" type="submit"> Log In </button>
                         </div>
                     </div>
