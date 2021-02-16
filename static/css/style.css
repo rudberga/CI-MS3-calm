@@ -70,11 +70,11 @@ nav .brand-logo {
 
 .modal {
     border-radius: 10px;
-    background: linear-gradient(to right, #79a3b1 0%,#79a3b1 40%,#79a3b1 40%,white 40%,white 100%);
+    background: linear-gradient(to right, #79a3b1 0%,#79a3b1 50%,#79a3b1 50%,white 50%,white 100%);
 }
 
 .modal h2 {
-    color: #456268;
+    color: #ffffff;
 }
 
 .modal button {
