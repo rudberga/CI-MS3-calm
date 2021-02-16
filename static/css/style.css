@@ -65,6 +65,20 @@ nav .brand-logo {
 .card-content i {
     color: #1DB954;
 }
+/*--------------------------------- Modals */
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 10px;
+}
+
+.modal h2 {
+    color: #456268;
+}
+
+.modal button {
+    background-color: #79a3b1;
+}
 
 /*--------------------------------- Buttons */
 
