@@ -56,15 +56,22 @@
 
 <section>
     <!-- Flash messages -->
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-        <div class="row flashes">
-            <h4 class="center-align">{{ message }}</h4>
-        </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
+    <!-- CREDIT for alerts: https://codepen.io/Rinebeck/pen/rrmRPz -->
+    <div class="materialert info">
+        <i class="far fa-check-circle"></i>
+        <span>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row flashes">
+                            <h4 class="center-align">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </span>
+        <button type="button" class="close-alert">×</button>
+    </div>
 </section>
 
 <body>

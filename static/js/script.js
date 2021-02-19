@@ -32,3 +32,9 @@ $(document).ready(function(){
         });
     };
 });
+
+// CREDIT for alerts: https://codepen.io/Rinebeck/pen/rrmRPz
+
+$(".materialert > .close-alert").click(function (){
+    $(this).parent().hide('slow');
+});
