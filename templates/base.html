@@ -120,12 +120,10 @@
                     <p>We are happy that you are back!</p>
                     <p>Please log in to the right.</p>
                 </div>
-            </div>
-            <div class="row">
-                <form class="col s12" method="POST" action="{{ url_for('login') }}">
+                <form class="col m6" method="POST" action="{{ url_for('login') }}">
                     <!-- Username -->
                     <div class="row">
-                        <div class="input-field col m6 offset-m6">
+                        <div class="input-field col m6 offset-m2">
                             <input id="username" name="username" type="text" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username">Username</label>
@@ -133,7 +131,7 @@
                     </div>
                     <!-- Password -->
                     <div class="row">
-                        <div class="input-field col m6 offset-m6">
+                        <div class="input-field col m6 offset-m2">
                             <input id="password" name="password" type="password" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="password">Password</label>
@@ -141,7 +139,7 @@
                     </div>
                     <!-- Log In button -->
                     <div class="row">
-                        <div class="col m6 offset-m6">
+                        <div class="col m6 offset-m2">
                             <button class="btn waves-effect waves-light" type="submit"> Log In </button>
                         </div>
                     </div>
