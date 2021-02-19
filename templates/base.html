@@ -18,7 +18,8 @@
     <!-- Top navbar -->
     <nav class="transparent nav-shadow">
         <div class="nav-wrapper">
-            <a href="{{ url_for('get_home') }}"><img src="static/img/logo_transparent.png" alt="Logo" class="brand-logo"></a>
+            <a href="{{ url_for('get_home') }}"><img src="static/img/logo_transparent.png" alt="Logo"
+                    class="brand-logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 {% if session.user %}
@@ -37,7 +38,9 @@
 
     <!-- Mobile navbar -->
     <ul class="sidenav" id="mobile-demo">
-        <li><h4>Calm</h4></li>
+        <li>
+            <h4>Calm</h4>
+        </li>
         {% if session.user %}
             <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
             <li><a href="{{ url_for('add_artist') }}">Add Artist</a></li>
@@ -56,9 +59,9 @@
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
-                <div class="row flashes">
-                    <h4 class="center-align">{{ message }}</h4>
-                </div>
+        <div class="row flashes">
+            <h4 class="center-align">{{ message }}</h4>
+        </div>
             {% endfor %}
         {% endif %}
     {% endwith %}
