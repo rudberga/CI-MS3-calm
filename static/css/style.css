@@ -55,6 +55,14 @@ main {
     width:100%;
 }
 
+.bg-profile {
+    background-color: #456268;
+}
+
+.bg-artists {
+    background-color: #456268;
+}
+
 .bg-landing-white {
     background-color: #fcf8ec;
 }
