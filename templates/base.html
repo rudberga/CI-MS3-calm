@@ -61,7 +61,8 @@
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <div class="materialert info">
+                <div class="row">
+                    <div class="materialert info col m6">
                         <i class="far fa-check-circle"></i>
                             <span>
                                 <div class="row flashes">
@@ -70,6 +71,7 @@
                             </span>
                         <button type="button" class="close-alert">&#10005</button>
                     </div>
+                </div>
                 {% endfor %}
             {% endif %}
         {% endwith %}
