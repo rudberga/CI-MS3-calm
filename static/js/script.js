@@ -33,6 +33,7 @@ $(document).ready(function(){
     };
 });
 
+// Alert for flash messages
 // CREDIT for alerts: https://codepen.io/Rinebeck/pen/rrmRPz
 
 $(".materialert > .close-alert").click(function (){
