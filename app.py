@@ -30,6 +30,7 @@ def get_artists():
     artists = list(mongo.db.artists.find())
     return render_template("artists.html", artists=artists)
 
+
 # Search functionality
 @app.route("/search", methods=["GET", "POST"])
 def search():
@@ -62,6 +63,7 @@ def sign_up():
         return redirect(url_for("profile",username=session["user"]))
     return render_template("index.html")
 
+
 # Log in functionality
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -89,6 +91,7 @@ def login():
     
     return render_template("index.html")
 
+
 # Profile page functionality
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
@@ -101,6 +104,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
+
 # Log out functionality
 @app.route("/logout")
 def logout():
@@ -108,6 +112,7 @@ def logout():
     flash("You have been logged out!")
     session.pop("user")
     return redirect(url_for("get_home"))
+
 
 # Add artist functionality
 @app.route("/add_artist", methods=["GET", "POST"])
