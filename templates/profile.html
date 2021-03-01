@@ -8,5 +8,10 @@
             <h3 class="center-align"> {{ username }}'s Profile </h3>
         </div>
     </div>
+    {% for artist in artists %}
+    {% if session.user|lower == artist.created_by|lower %}
+        <p>{{ artist.genre_name }}</p>
+    {% endif %}
+    {% endfor %}
 </body>
 {% endblock %}
