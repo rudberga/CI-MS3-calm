@@ -90,15 +90,15 @@
     <!-- Modal -->
     <div id="modal2" class="modal">
         <div class="modal-content">
-
-            <h1 class="center-align">Sign Up!</h1>
-
             <div class="row">
-                <form class="col s12" method="POST" action="{{ url_for('sign_up') }}">
+                <div class="col m6">
+                    <h2>Sign Up!</h2>
+                    <p>Text here!</p>
+                </div>
+                <form class="col m6" method="POST" action="{{ url_for('sign_up') }}">
                     <!-- Username -->
                     <div class="row">
-                        <div class="input-field col m8 offset-m2">
-                            <i class="far fa-user prefix"></i>
+                        <div class="input-field col m6 offset-m2">
                             <input id="username" name="username" type="text" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username">Username</label>
@@ -106,8 +106,7 @@
                     </div>
                     <!-- Password -->
                     <div class="row">
-                        <div class="input-field col m8 offset-m2">
-                            <i class="fas fa-key prefix"></i>
+                        <div class="input-field col m6 offset-m2">
                             <input id="password" name="password" type="password" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="password">Password</label>
@@ -130,9 +129,8 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col m6">
-                    <h2 class="center-align">Hello there!</h2>
+                    <h2>Hello there!</h2>
                     <p>We are happy that you are back!</p>
-                    <p>Please log in to the right.</p>
                 </div>
                 <form class="col m6" method="POST" action="{{ url_for('login') }}">
                     <!-- Username -->

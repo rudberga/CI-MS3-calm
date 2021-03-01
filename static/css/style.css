@@ -143,11 +143,13 @@ main {
 
 .modal {
     border-radius: 10px;
-    background: linear-gradient(to right, #79a3b1 0%,#79a3b1 50%,#79a3b1 50%,white 50%,white 100%);
+    /*background: linear-gradient(to right, #79a3b1 0%,#79a3b1 50%,#79a3b1 50%,white 50%,white 100%);*/
+    background-image:linear-gradient(to right, transparent 47%, #fff 47%), url('https://images.unsplash.com/photo-1506536329413-d2f0d31ceb9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 }
 
 .modal h2 {
-    color: #ffffff;
+    color: #456268;
+    font-weight: 600;
 }
 
 .modal button {
