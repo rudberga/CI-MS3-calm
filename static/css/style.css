@@ -81,6 +81,20 @@ main {
     background-color: none;
 }
 
+.sidenav {
+    background-color: #456268;
+    color: #fff;
+}
+
+.sidenav h4 {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.sidenav a {
+    color: #fff;
+}
+
 /*--------------------------------- Flash messages */
 
 .materialert{
