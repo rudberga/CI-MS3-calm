@@ -75,6 +75,7 @@ main {
 
 .hide-on-med-and-down li {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 .nav-wrapper ul li:hover {
