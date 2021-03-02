@@ -91,7 +91,7 @@ main {
     margin-left: 20px;
 }
 
-.sidenav a {
+.sidenav li>a {
     color: #fff;
 }
 
