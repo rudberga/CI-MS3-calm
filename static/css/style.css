@@ -93,6 +93,7 @@ main {
 
 .sidenav li>a {
     color: #fff;
+    font-weight: 600;
 }
 
 /*--------------------------------- Flash messages */
