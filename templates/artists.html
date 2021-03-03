@@ -21,10 +21,12 @@
                     <a href="{{ url_for('get_artists') }}" class="btn">
                         <i class="fas fa-undo"></i>
                     </a>
+                    {% if session.user %}
                     <button type="submit" class="btn-large light-blue darken-1 text-shadow modal-trigger"
                         data-target="modal3">
                         Add Artist <i class="fas fa-plus-square right"></i>
                     </button>
+                    {% endif %}
                 </div>
             </div>
         </form>
