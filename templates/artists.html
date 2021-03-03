@@ -6,7 +6,7 @@
     <div class="title-artists center-align">
         <h1>Artists</h1>
     </div>
-
+    <!-- Search field -->
     <div class="row">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
@@ -21,6 +21,7 @@
                     <a href="{{ url_for('get_artists') }}" class="btn">
                         <i class="fas fa-undo"></i>
                     </a>
+                    <!-- Add artist modal trigger button -->
                     {% if session.user %}
                     <button type="submit" class="btn-large light-blue darken-1 text-shadow modal-trigger"
                         data-target="modal3">
@@ -31,7 +32,7 @@
             </div>
         </form>
     </div>
-
+    <!-- Add artist modal -->
     <div id="modal3" class="modal">
         <div class="modal-content">
             <h3 class="center-align">Add Artist</h3>
@@ -110,7 +111,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Artist cards -->
     {% if artists|length > 0 %}
     <div class="row">
         {% for artist in artists %}
