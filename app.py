@@ -18,13 +18,14 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+# Landing page
 @app.route("/")
 @app.route("/get_home")
 def get_home():
     return render_template("index.html")
 
 
+# Get artists and genres functionality
 @app.route("/get_artists")
 def get_artists():
     artists = list(mongo.db.artists.find())
