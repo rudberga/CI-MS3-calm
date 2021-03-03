@@ -140,6 +140,7 @@ def add_artist():
     return render_template("add_artist.html", genres=genres)
 
 
+# Edit artist functionality
 @app.route("/edit_artist/<artist_id>", methods=["GET", "POST"])
 def edit_artist(artist_id):
     if request.method == "POST":
@@ -162,6 +163,7 @@ def edit_artist(artist_id):
     return render_template("edit_artist.html", artist=artist, genres=genres)
 
 
+# Delete artist functionality
 @app.route("/delete_artist/<artist_id>")
 def delete_artist(artist_id):
     mongo.db.artists.remove({"_id": ObjectId(artist_id)})
