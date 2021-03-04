@@ -89,13 +89,10 @@
     <div id="modal2" class="modal">
         <div class="modal-content">
             <div class="row">
-                <div class="col m6">
-                    <h2>Sign Up!</h2>
-                    <p>Text here!</p>
-                </div>
-                <form class="col m6" method="POST" action="{{ url_for('sign_up') }}">
+                <form class="col s6 offset-s6" method="POST" action="{{ url_for('sign_up') }}">
                     <!-- Username -->
                     <div class="row">
+                        <h2>Sign Up!</h2>
                         <div class="input-field col m6 offset-m2">
                             <input id="username" name="username" type="text" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
@@ -112,7 +109,7 @@
                     </div>
                     <!-- Sign Up button -->
                     <div class="row">
-                        <div class="col m2 offset-m8">
+                        <div class="col m4 offset-m6">
                             <button class="btn waves-effect waves-light" type="submit">Sign Up!</button>
                         </div>
                     </div>
@@ -126,13 +123,10 @@
     <div id="modal1" class="modal">
         <div class="modal-content">
             <div class="row">
-                <div class="col m6">
-                    <h2>Hello there!</h2>
-                    <p>We are happy that you are back!</p>
-                </div>
-                <form class="col m6" method="POST" action="{{ url_for('login') }}">
+                <form class="col s6 offset-s6" method="POST" action="{{ url_for('login') }}">
                     <!-- Username -->
                     <div class="row">
+                        <h2>Log In</h2>
                         <div class="input-field col m6 offset-m2">
                             <input id="username" name="username" type="text" minlength="5" maxlength="15"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
@@ -149,7 +143,7 @@
                     </div>
                     <!-- Log In button -->
                     <div class="row">
-                        <div class="col m6 offset-m2">
+                        <div class="col m4 offset-m6">
                             <button class="btn waves-effect waves-light" type="submit"> Log In </button>
                         </div>
                     </div>
