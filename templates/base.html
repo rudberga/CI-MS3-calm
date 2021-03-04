@@ -89,7 +89,7 @@
     <div id="modal2" class="modal">
         <div class="modal-content">
             <div class="row">
-                <form class="col s6 offset-s6" method="POST" action="{{ url_for('sign_up') }}">
+                <form class="col s5 offset-s7" method="POST" action="{{ url_for('sign_up') }}">
                     <!-- Username -->
                     <div class="row">
                         <h2>Sign Up!</h2>
@@ -107,6 +107,13 @@
                             <label for="password">Password</label>
                         </div>
                     </div>
+                    <!-- Accept terms -->
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" />
+                            <span>I accept the <u>Terms and Conditions</u></span>
+                        </label>
+                    </div>
                     <!-- Sign Up button -->
                     <div class="row">
                         <div class="col m4 offset-m6">
@@ -123,7 +130,7 @@
     <div id="modal1" class="modal">
         <div class="modal-content">
             <div class="row">
-                <form class="col s6 offset-s6" method="POST" action="{{ url_for('login') }}">
+                <form class="col s5 offset-s7" method="POST" action="{{ url_for('login') }}">
                     <!-- Username -->
                     <div class="row">
                         <h2>Log In</h2>
@@ -144,7 +151,7 @@
                     <!-- Log In button -->
                     <div class="row">
                         <div class="col m4 offset-m6">
-                            <button class="btn waves-effect waves-light" type="submit"> Log In </button>
+                            <button class="btn waves-effect waves-light btn-modal" type="submit"> Log In </button>
                         </div>
                     </div>
                 </form>
