@@ -196,6 +196,20 @@ main {
 
 /*--------------------------------- Buttons */
 
+.btn-search {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.btn-undo {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.btn-add-artist {
+    background-color: transparent;
+    border-radius: 15px;
+}
 
 /*--------------------------------- Footer */
 
