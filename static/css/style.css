@@ -50,6 +50,9 @@ main {
     color: #000;
 }
 
+
+/*--------------------------------- Backgrounds */
+
 .bg-landing {
     height: 100%;
     background-position: center;
@@ -153,11 +156,17 @@ main {
     margin-right: 10px;
 }
 
-/*--------------------------------- Artist cards */
+/*--------------------------------- Artists page */
 
 .card-content i {
     color: #1DB954;
 }
+
+.title-artists {
+    font-weight: 700;
+    color: #fff;
+}
+
 /*--------------------------------- Modals */
 /* CREDIT: Partly colored background: https://css-tricks.com/forums/topic/css-background-with-2-colors */
 
