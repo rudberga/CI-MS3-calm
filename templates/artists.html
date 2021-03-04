@@ -7,6 +7,7 @@
         <h1>Artists</h1>
     </div>
     <!-- Search field -->
+    {% if session.user %}
     <div class="row">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
@@ -22,16 +23,19 @@
                         <i class="fas fa-undo"></i>
                     </a>
                     <!-- Add artist modal trigger button -->
-                    {% if session.user %}
                     <button type="submit" class="btn-large light-blue darken-1 text-shadow modal-trigger"
                         data-target="modal3">
                         Add Artist <i class="fas fa-plus-square right"></i>
                     </button>
-                    {% endif %}
                 </div>
             </div>
         </form>
     </div>
+    {% else %}
+    <div>
+        <p>For more functions such as search and add your own artists, log in or sign up!</p>
+    </div>
+    {% endif %}
     <!-- Add artist modal -->
     <div id="modal3" class="modal">
         <div class="modal-content">
