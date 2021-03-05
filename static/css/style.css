@@ -167,6 +167,11 @@ main {
     color: #fff;
 }
 
+.text-artists {
+    color: #fff;
+    background-color: transparent;
+}
+
 /*--------------------------------- Profile page */
 
 .title-profile {
