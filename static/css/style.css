@@ -181,6 +181,12 @@ main {
     font-weight: 600;
 }
 
+.modal h3 {
+    color: #456268;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
 .modal button {
     background-color: #79a3b1;
     width: 100px;
@@ -209,6 +215,12 @@ main {
 .btn-add-artist {
     background-color: transparent;
     border-radius: 15px;
+}
+
+.btn-add-artist-modal {
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 50px;
 }
 
 /*--------------------------------- Footer */
