@@ -167,6 +167,13 @@ main {
     color: #fff;
 }
 
+/*--------------------------------- Profile page */
+
+.title-profile {
+    font-weight: 700;
+    color: #fff;
+}
+
 /*--------------------------------- Modals */
 /* CREDIT: Partly colored background: https://css-tricks.com/forums/topic/css-background-with-2-colors */
 
