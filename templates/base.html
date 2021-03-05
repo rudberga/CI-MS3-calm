@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-    <link rel="icon" href="static/img/icon.png">
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
     {% block styles %}
     {% endblock %}
     <title>Calm - find your music</title>
@@ -19,7 +19,7 @@
     <!-- Top navbar -->
     <nav class="transparent nav-shadow">
         <div class="nav-wrapper">
-            <a href="{{ url_for('get_home') }}"><img src="static/img/logo_transparent.png" alt="Logo"
+            <a href="{{ url_for('get_home') }}"><img src="{{ url_for('static', filename='img/logo_transparent.png') }}" alt="Logo"
                     class="brand-logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
