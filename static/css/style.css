@@ -230,6 +230,23 @@ main {
     margin-top: 50px;
 }
 
+.btn-delete i {
+    background-color: transparent;
+    color: rgba(48, 48, 48, 0.589);
+    border-radius: 15px;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.btn-edit i {
+    background-color: transparent;
+    color: rgba(48, 48, 48, 0.589);
+    border-radius: 15px;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 /*--------------------------------- Footer */
 
 .page-footer-bg-color {
