@@ -170,6 +170,25 @@ def delete_artist(artist_id):
     flash("Artist Successfully Deleted")
     return redirect(url_for("get_artists"))
 
+# Add e-mail to db for newsletter functionality
+@app.route("/newsletter", methods=["GET", "POST"])
+def add_newsletter():
+    if request.method == "POST":
+        # Check if e-mail is already registered
+        existing_email = mongo.db.newsletters.find_one(
+            {"email": request.form.get("email").lower()})
+
+        if existing_email:
+            flash("Great news, your E-mail is already subscribed!")
+            return redirect(url_for("get_home"))
+
+            email = {
+                "email": request.form.get("email"),
+            }
+            mongo.db.newsletters.insert_one(email)
+            flash("Successfully subscribed!")
+            return redirect(url_for("get_home"))
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

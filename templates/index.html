@@ -6,8 +6,18 @@
     <div class="row text-landing">
         <div class="col m7 s6">
             {% if session.user %}
-                <h3>PLACEHOLDER TEXT</h3>
-                <h5></h5>
+            <form class="" method="POST" action="{{ url_for('add_newsletter') }}" >   
+                <h3>Want the latest additions sent straight to your inbox? Sign up for our newsletter below!</h3>
+                    <div class="input-field col m6">
+                        <input id="email" name="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="row">
+                        <div class="col m4 offset-m6">
+                            <button class="btn waves-effect waves-light" type="submit">Submit!</button>
+                        </div>
+                    </div>
+                </form>
             {% else %}
                 <h2>Looking for calm music?</h2>
                 <h5>Find new artists and add your own - get started below!</h5>
@@ -17,7 +27,6 @@
     <div class="row btn-landing m7 s6">
         <div class="col">
             {% if session.user %}
-            <button>See more artists (placeholder)</button>
             {% else %}
             <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn">Login</a>
             <span> or </span>
