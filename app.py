@@ -179,15 +179,15 @@ def add_newsletter():
             {"email": request.form.get("email").lower()})
 
         if existing_email:
-            flash("Great news, your E-mail is already subscribed!")
+            flash("Your E-mail is already subscribed!")
             return redirect(url_for("get_home"))
 
-            email = {
-                "email": request.form.get("email"),
-            }
-            mongo.db.newsletters.insert_one(email)
-            flash("Successfully subscribed!")
-            return redirect(url_for("get_home"))
+        email = {
+            "email": request.form.get("email"),
+        }
+        mongo.db.newsletters.insert_one(email)
+        flash("Successfully subscribed!")
+        return redirect(url_for("get_home"))
 
 
 if __name__ == "__main__":
