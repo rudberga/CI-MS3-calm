@@ -137,7 +137,7 @@ def add_artist():
         return redirect(url_for("get_artists"))
 
     genres = mongo.db.genres.find().sort("genre_name", 1)
-    return render_template("add_artist.html", genres=genres)
+    return render_template("artists.html", genres=genres)
 
 
 # Edit artist functionality
