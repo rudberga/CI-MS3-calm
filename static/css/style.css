@@ -19,6 +19,8 @@ main {
     max-width: 15%;
 }
 
+/*--------------------------------- Index page */
+
 .text-landing {
     margin-left: -20%;
     margin-top: 12%;
@@ -39,17 +41,6 @@ main {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
 }
-
-.btn-landing {
-    margin-left: -20%;
-    margin-top: 5%;
-}
-
-.btn-landing a {
-    background-color: #d0e8f2;
-    color: #000;
-}
-
 
 /*--------------------------------- Backgrounds */
 
@@ -213,6 +204,16 @@ main {
 }
 
 /*--------------------------------- Buttons */
+
+.btn-landing {
+    margin-left: -20%;
+    margin-top: 5%;
+}
+
+.btn-landing a {
+    background-color: #d0e8f2;
+    color: #000;
+}
 
 .btn-search {
     background-color: transparent;
