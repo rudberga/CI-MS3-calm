@@ -103,6 +103,7 @@ main {
     width: 80%;
     margin-top: 20px;
     margin-bottom: -200px;
+    position: absolute;
 }
 
 .flash-card p {
