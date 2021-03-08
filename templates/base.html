@@ -19,18 +19,18 @@
     <!-- Top navbar -->
     <nav class="transparent nav-shadow">
         <div class="nav-wrapper">
-            <a href="{{ url_for('get_home') }}"><img src="{{ url_for('static', filename='img/logo_transparent.png') }}" alt="Logo"
-                    class="brand-logo"></a>
+            <a href="{{ url_for('get_home') }}"><img src="{{ url_for('static', filename='img/logo_transparent.png') }}"
+                    alt="Logo" class="brand-logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 {% if session.user %}
-                    <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
-                    <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
                 {% else %}
-                    <li><a href="" data-target="modal1" class="modal-trigger">Login</a></li>
-                    <li><a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger">Sign Up</a></li>
-                    <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
+                <li><a href="" data-target="modal1" class="modal-trigger">Login</a></li>
+                <li><a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger">Sign Up</a></li>
+                <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
                 {% endif %}
             </ul>
         </div>
@@ -42,39 +42,44 @@
             <h4>Calm</h4>
         </li>
         {% if session.user %}
-            <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
-            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
+        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
         {% else %}
-            <li><a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger">Login</a></li>
-            <li><a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger">Sign Up</a></li>
-            <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
+        <li><a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger">Login</a></li>
+        <li><a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger">Sign Up</a></li>
+        <li><a href="{{ url_for('get_artists') }}">Artists</a></li>
         {% endif %}
     </ul>
 </header>
 
 <section>
     <!-- Flash messages -->
-    <!-- CREDIT for alerts: https://codepen.io/Rinebeck/pen/rrmRPz -->
-    
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                <div class="row">
-                    <div class="materialert info col s12 m6 offset-m3 l4 offset-l4">
-                        <i class="fas fa-exclamation-circle"></i>
-                            <span>
-                                <div class="flashes">
-                                <h5 class="center-align">{{ message }}</h5>
+    <!-- CREDIT for alerts: https://codepen.io/pradeep1616/pen/LxaRRB -->
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="row" id="alert_box">
+                    <div class="col s12 m12">
+                        <div class="card red darken-1">
+                            <div class="row">
+                                <div class="col s12 m10">
+                                    <div class="card-content white-text">
+                                        <p>{{ message }}</p>
+                                    </div>
                                 </div>
-                            </span>
-                        <button type="button" class="close-alert">&#10005</button>
+                                <div class="col s12 m2">
+                                    <i class="fa fa-times icon-style" id="alert_close" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-        
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
 </section>
 
 <body>
@@ -118,7 +123,8 @@
                     <!-- Sign Up button -->
                     <div class="row">
                         <div>
-                            <button class="btn btn-sign-up waves-effect waves-light right" type="submit">Sign Up!</button>
+                            <button class="btn btn-sign-up waves-effect waves-light right" type="submit">Sign
+                                Up!</button>
                         </div>
                     </div>
                 </form>

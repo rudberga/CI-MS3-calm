@@ -34,8 +34,9 @@ $(document).ready(function(){
 });
 
 // Alert for flash messages
-// CREDIT for alerts: https://codepen.io/Rinebeck/pen/rrmRPz
+// CREDIT for alerts: https://codepen.io/pradeep1616/pen/LxaRRB
 
-$(".materialert > .close-alert").click(function (){
-    $(this).parent().hide('slow');
-});
+$('#alert_close').click(function(){
+    $( "#alert_box" ).fadeOut( "slow", function() {
+    });
+  });

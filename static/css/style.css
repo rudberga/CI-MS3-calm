@@ -98,6 +98,15 @@ main {
 
 /*--------------------------------- Flash messages */
 
+.icon-style{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer; 
+}
+
 .materialert{
     position: absolute;
     width: 70%;
