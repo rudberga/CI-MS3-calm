@@ -1,4 +1,5 @@
 import os
+from bson.json_util import dumps
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -133,8 +134,9 @@ def add_artist():
             "created_by": session["user"]
         }
         mongo.db.artists.insert_one(artist)
-        flash("Artist Successfully Added")
-        return redirect(url_for("get_artists"))
+        # flash("Artist Successfully Added")
+        # Returns the "artist" inserted, with its ID
+        return dumps(artist)
 
     genres = mongo.db.genres.find().sort("genre_name", 1)
     return render_template("artists.html", genres=genres)
