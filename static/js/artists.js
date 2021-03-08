@@ -8,7 +8,7 @@ function renderArtist(artist) {
     } else {
         vocalsIcon = '<i class="fas fa-microphone-slash"></i>';
     }
-    // Append the artist element to the container
+    // Prepend the artist element to the container
     $("#artists_container").prepend(`
         <div class="col s12 m4">
             <div class="card small">
