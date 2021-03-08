@@ -1,4 +1,3 @@
-// Code uses JQuery
 // Function to render the artist in the DOM after it is inserted in the DataBase
 function renderArtist(artist) {
     // If vocals is ON print microphone icon, if it is OFF print microphone with slash icon
