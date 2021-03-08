@@ -98,7 +98,20 @@ main {
 
 /*--------------------------------- Flash messages */
 
-.icon-style{
+.flash-card {
+    background-color: #79a3b1;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: -200px;
+}
+
+.flash-card p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.icon-style {
     position: absolute;
     right: 10px;
     top: 10px;
