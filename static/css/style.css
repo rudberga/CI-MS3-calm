@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: 'Barlow', sans-serif;
+    color: #fff;
 }
 
 main {
@@ -235,8 +236,16 @@ main {
     margin-right: 10px;
 }
 
-.btn-sign-up {
+.btn-sign-up-modal {
     margin-top: 10px;
+}
+
+.btn-sign-up {
+    margin-left: 10px;
+}
+
+.btn-login {
+    margin-right: 10px;
 }
 
 .btn-edit-artist-cancel {
