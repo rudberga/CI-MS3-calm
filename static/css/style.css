@@ -239,6 +239,11 @@ main {
 
 .btn-sign-up-modal {
     margin-top: 10px;
+    border-radius: 15px;
+}
+
+.btn-sign-up-modal {
+    border-radius: 15px;
 }
 
 .btn-sign-up {
