@@ -6,12 +6,12 @@
         <div class="col s12">
             <!-- Making usernames first letter uppercase -->
             <!-- CREDIT: https://shubhamjain.co/til/capitalizing-first-letter-in-jinja -->
-            <h3 class="center-align title-profile"><strong> {{ username[0]|upper }}{{username[1:] }}'s profile </strong></h3>
+            <h2 class="center-align title-profile"><strong> Welcome {{ username[0]|upper }}{{username[1:] }}! &#128075 </strong></h2>
         </div>
     </div>
     <!-- User added artist cards -->
 
-    <div class="row">
+    <div class="row cards-profile">
         <h4 class="center-align">Artists added by you:</h4>
         {% for artist in artists %}
         {% if session.user|lower == artist.created_by|lower %}
