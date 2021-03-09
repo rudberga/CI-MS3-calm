@@ -170,6 +170,10 @@ main {
     width: 100px;
 }
 
+.modal-add-artist {
+    background: #fff;
+}
+
 .username-sign-up {
     margin-bottom: -10px;
 }

@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right", draggable: true});
     $('.modal').modal();
     $('select').formSelect();
+    $('.tooltipped').tooltip();
   
 // Validation for the genre dropdown
  validateMaterializeSelect();
