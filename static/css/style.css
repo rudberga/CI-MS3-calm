@@ -234,6 +234,16 @@ main {
     margin-top: 10px;
 }
 
+.btn-edit-artist-cancel {
+    background-color: #456268;
+    border-radius: 15px;
+}
+
+.btn-edit-artist-finish {
+    background-color: #456268;
+    border-radius: 15px;
+}
+
 /*--------------------------------- Footer */
 
 .page-footer-bg-color {
