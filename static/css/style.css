@@ -99,7 +99,7 @@ main {
 /*--------------------------------- Flash messages */
 
 .flash-card {
-    background-color: rgba(121, 163, 177, 0.603);
+    background-color: rgba(121, 163, 177, 0.800);
     width: 70%;
     margin-top: 20px;
     margin-bottom: -200px;
