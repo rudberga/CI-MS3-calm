@@ -198,6 +198,7 @@ main {
 .btn-landing a {
     background-color: #d0e8f2;
     color: #000;
+    border-radius: 15px;
 }
 
 .btn-search {
