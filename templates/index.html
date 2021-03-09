@@ -28,9 +28,9 @@
         <div class="col">
             {% if session.user %}
             {% else %}
-            <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn btn-login">Login</a>
+            <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn btn-login"><strong>Login</strong></a>
             <span><strong> or </strong></span>
-            <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn btn-sign-up">Sign up</a>
+            <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn btn-sign-up"><strong>Sign up</strong></a>
             {% endif %}
         </div>
     </div>

@@ -125,6 +125,10 @@ main {
 
 /*--------------------------------- Artists page */
 
+.card-reveal {
+    color: #000;
+}
+
 .card-content i {
     color: #1DB954;
 }
