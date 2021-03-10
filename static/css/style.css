@@ -277,11 +277,17 @@ main {
 .btn-edit-artist-cancel {
     background-color: #456268;
     border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px #fff solid;
 }
 
 .btn-edit-artist-finish {
     background-color: #456268;
     border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px #fff solid;
 }
 
 .btn-nl-submit {
