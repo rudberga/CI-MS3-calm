@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Edit Artist</h3>
+<body class="bg-edit-artists">
+
+<div class="title-artists center-align">
+        <h1><strong>Edit Artists</strong></h1>
+    </div>
 
 <div class="row">
     <form class="col s12" method="POST" action="{{ url_for('edit_artist', artist_id=artist._id) }}">
@@ -90,5 +94,7 @@
         </div>
     </form>
 </div>
+
+</body>
 
 {% endblock %}
