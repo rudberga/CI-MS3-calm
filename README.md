@@ -70,7 +70,7 @@ The design and layout of this website will focus on the word 'calm'. Therefore p
 
 #### Main inspiration
  
-TEXT HERE
+I took my main inspiration from the world 'calm' and what I associate with it, also what I believe other people associate with it. What I came up with was to base the design out of the color blue and feeling of a forrest with a lake. The shade of blue comes together with a green tone to give the calming appearance of the website. Nothing screams out in terms of color or shape.
 
 #### Fonts
 
