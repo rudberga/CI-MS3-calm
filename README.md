@@ -52,7 +52,7 @@ The features of this website will let the users:
 
 ### Structure
 
-TEXT HERE
+The design and layout of this website will focus on the word 'calm'. Therefore picking up both the color theme and details such as rounded corners on all buttons, to remove elements that might pose as 'harsh'. The word 'calm' also made me focus on using modals to create a smoother experience for the user, not having to see a new rendered page for each button they press.
 
 ### Skeleton
 
