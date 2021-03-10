@@ -1,6 +1,6 @@
 <h1 align="center">Calm</h1> 
 
-## IMAGE OF MOCKUP DEVICES
+![Mockup devices](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/mockups.png?raw=true "Mockup devices")
 
 
 <p align="center"><strong>Milestone 3 project - Full Stack Web Developer course - Code Institute</strong></p>
@@ -17,13 +17,17 @@ See below user stories:
 
 > *- "As a user of the website, I expect to find a layout which is user friendly, so I easily can navigate throughout the website"*
 
-> *- "As a user of the website, I expect to be able to register an account, so I can add, edit and delete my own posts"*
+> *- "As a user of the website, I expect to be able to register an account, so I can add, edit and delete my own artists"*
 
 > *- "As a first time visitor of the website, I expect to be able to see artists without having to register, so I can get an idea of how the website works"*
 
 > *- "As a user of the website, I expect to have all my own posts gathered on my profile page, so I easily can get an overview of my contributions"*
 
-> *- "As a user of the website, I expect to ... , so I ..."*
+> *- "As a user of the website, I expect to be able to sign up for a newsletter, so I can get updates straigh to my inbox"*
+
+> *- "As a user of the website, I expect to have easy access to social links, so I can check and possibly follow the social accounts"*
+
+> *- "As a user of the website, I expect to get basic information and a link to the artist in the artist cards, so I can be informed before clicking the link"*
 
 ### Strategy
 
@@ -48,7 +52,7 @@ The features of this website will let the users:
 
 ### Structure
 
-TEXT HERE
+The design and layout of this website will focus on the word 'calm'. Therefore picking up both the color theme and details such as rounded corners on all buttons, to remove elements that might pose as 'harsh'. The word 'calm' also made me focus on using modals to create a smoother experience for the user, not having to see a new rendered page for each button they press.
 
 ### Skeleton
 
