@@ -143,11 +143,14 @@ I have therefore focused on below colors:
 
 **Frameworks**
 
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+    - Framework used with python to create the application. Imported via app.py
+
 - [Materialize](https://materializecss.com/)
-    - Framework used in order to improve the structure and design of the website. Connected to HTML via CDN
+    - Framework used in order to improve the structure and design of the website. Imported via CDN
 
 - [jQuery](https://jquery.com/)
-    - Framework used with JavaScript in order to simplify the code. Connected to HTML via CDN
+    - Framework used with JavaScript in order to simplify the code. Imported via CDN
 
 **Version control**
 
