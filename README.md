@@ -80,13 +80,13 @@ For the fonts in this project I decided to play with the font weights of the fon
 
 This is the font weight used for standard text such as inside the artist cards
 
-![Barlow400](static/docs/ci-ms3-calm.pdf)
+![Barlow](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/barlow-400.png?raw=true "Barlow 400 weight")
 
 ##### Barlow weight 700
 
 This is the font weight used for the bigger texts such as on the landing page
 
-![Barlow700](static/docs/ci-ms3-calm.pdf)
+![Barlow](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/barlow-700.png?raw=true "Barlow 700 weight")
 
 #### Colors
 
