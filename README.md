@@ -17,13 +17,17 @@ See below user stories:
 
 > *- "As a user of the website, I expect to find a layout which is user friendly, so I easily can navigate throughout the website"*
 
-> *- "As a user of the website, I expect to be able to register an account, so I can add, edit and delete my own posts"*
+> *- "As a user of the website, I expect to be able to register an account, so I can add, edit and delete my own artists"*
 
 > *- "As a first time visitor of the website, I expect to be able to see artists without having to register, so I can get an idea of how the website works"*
 
 > *- "As a user of the website, I expect to have all my own posts gathered on my profile page, so I easily can get an overview of my contributions"*
 
-> *- "As a user of the website, I expect to ... , so I ..."*
+> *- "As a user of the website, I expect to be able to sign up for a newsletter, so I can get updates straigh to my inbox"*
+
+> *- "As a user of the website, I expect to have easy access to social links, so I can check and possibly follow the social accounts"*
+
+> *- "As a user of the website, I expect to get basic information and a link to the artist in the artist cards, so I can be informed before clicking the link"*
 
 ### Strategy
 
