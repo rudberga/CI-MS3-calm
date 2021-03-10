@@ -106,10 +106,19 @@ I have therefore focused on below colors:
 ### Existing Features
 
 - **Social links**: in the footer you will find the icons for Inspiry's different social platforms
+- **User Account**: create your own user account with username and password
+- **Login/Logout**: functionality that let you log in and log out in a simple way
+- **Add, Edit, Delete Artists**: functionality that let you add, edit and delete your own contributions
+- **Direct Link**: every artist card has a direct link to Spotify (via icon) in order for the user to easier access the artist
+- **Artist page**: where the user can see all contributions from all users and click on each artist for more information
+- **Profile page**: users own profile page where they will see all of their own contributions
+- **Search**: search function on the artist page where the user can search for artists based on name, nationality or genre
+- **Newsletter**: users can register for a newsletter list when they are logged in
 
 ### Features Left to Implement
 
-- 
+- **Favorite list**: let every user add their favorite artists to their own profile
+- **Carousel**: with the most favorited artists
 
 ## Technologies Used 
 
