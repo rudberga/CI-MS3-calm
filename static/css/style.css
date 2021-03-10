@@ -47,6 +47,20 @@ main {
     margin-right: 10px;
 }
 
+/*--------------------------------- Edit Artists */
+
+.edit-artist-form {
+    color: #fff;
+}
+
+.edit-artist-form input {
+    color: #fff;
+}
+
+.edit-artist-form textarea {
+    color: #fff;
+}
+
 /*--------------------------------- Backgrounds */
 
 .bg-landing {
