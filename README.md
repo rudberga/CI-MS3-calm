@@ -76,30 +76,29 @@ I took my main inspiration from the world 'calm' and what I associate with it, a
 
 For the fonts in this project I decided to play with the font weights of the font 'Barlow'. I think this font fits my website as it is not too aggressive in its approach and it looks modern.
 
-##### Barlow weight 400
+#### Barlow weight 400
 
 This is the font weight used for standard text such as inside the artist cards
 
-![Barlow400](static/docs/ci-ms3-calm.pdf)
+![Barlow](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/barlow-400.png?raw=true "Barlow 400 weight")
 
-##### Barlow weight 700
+#### Barlow weight 700
 
 This is the font weight used for the bigger texts such as on the landing page
 
-![Barlow700](static/docs/ci-ms3-calm.pdf)
+![Barlow](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/barlow-700.png?raw=true "Barlow 700 weight")
 
 #### Colors
 
-TEXT HERE
+The color theme I have decided to go with focuses mainly on blue with green hints.
 
-I have therefore focused on below colors: - UPDATE THIS
+I have therefore focused on below colors:
 
-- #e74c3c
-- #ffffff
-- #4f97c7 
-- #000000
+- #d0e8f2
+- #79a3b1
+- #456268
 
-PIC OF COLOR PALETTE HERE
+![Colors](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/color-palette.png?raw=true "Color Palette")
 
 ## Features
 
