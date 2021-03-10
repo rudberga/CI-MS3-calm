@@ -90,16 +90,15 @@ This is the font weight used for the bigger texts such as on the landing page
 
 #### Colors
 
-TEXT HERE
+The color theme I have decided to go with focuses mainly on blue with green hints.
 
-I have therefore focused on below colors: - UPDATE THIS
+I have therefore focused on below colors:
 
-- #e74c3c
-- #ffffff
-- #4f97c7 
-- #000000
+- #d0e8f2
+- #79a3b1
+- #456268
 
-PIC OF COLOR PALETTE HERE
+![Colors](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/color-palette.png?raw=true "Color Palette")
 
 ## Features
 
