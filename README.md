@@ -76,13 +76,13 @@ I took my main inspiration from the world 'calm' and what I associate with it, a
 
 For the fonts in this project I decided to play with the font weights of the font 'Barlow'. I think this font fits my website as it is not too aggressive in its approach and it looks modern.
 
-##### Barlow weight 400
+#### Barlow weight 400
 
 This is the font weight used for standard text such as inside the artist cards
 
 ![Barlow](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/barlow-400.png?raw=true "Barlow 400 weight")
 
-##### Barlow weight 700
+#### Barlow weight 700
 
 This is the font weight used for the bigger texts such as on the landing page
 
