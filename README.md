@@ -1,6 +1,6 @@
 <h1 align="center">Calm</h1> 
 
-## IMAGE OF MOCKUP DEVICES
+![Mockup devices](https://github.com/rudberga/CI-MS3-calm/blob/master/static/img/mockups.png?raw=true "Mockup devices")
 
 
 <p align="center"><strong>Milestone 3 project - Full Stack Web Developer course - Code Institute</strong></p>
