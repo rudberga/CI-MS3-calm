@@ -7,7 +7,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: 'Barlow', sans-serif;
-    color: #fff;
 }
 
 main {
