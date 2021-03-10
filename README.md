@@ -56,15 +56,15 @@ The design and layout of this website will focus on the word 'calm'. Therefore p
 
 ### Skeleton
 
-WIREFRAME LINK HERE
+[Wireframe](static/docs/ci-ms3-calm.pdf)
 
 6 pages included in the wireframe which are:
-- 
-- 
-- 
-- 
-- 
--
+- Landing Page
+- Login Modal
+- Register Modal
+- Artist Page
+- Add Artist Module
+- Profile Page
 
 ### Surface
 
