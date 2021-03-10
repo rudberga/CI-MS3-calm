@@ -56,27 +56,37 @@ The design and layout of this website will focus on the word 'calm'. Therefore p
 
 ### Skeleton
 
-WIREFRAME LINK HERE
+[Wireframe](static/docs/ci-ms3-calm.pdf)
 
 6 pages included in the wireframe which are:
-- 
-- 
-- 
-- 
-- 
--
+- Landing Page
+- Login Modal
+- Register Modal
+- Artist Page
+- Add Artist Module
+- Profile Page
 
 ### Surface
 
 #### Main inspiration
  
-TEXT HERE
+I took my main inspiration from the world 'calm' and what I associate with it, also what I believe other people associate with it. What I came up with was to base the design out of the color blue and feeling of a forrest with a lake. The shade of blue comes together with a green tone to give the calming appearance of the website. Nothing screams out in terms of color or shape.
 
 #### Fonts
 
-TEXT HERE
+For the fonts in this project I decided to play with the font weights of the font 'Barlow'. I think this font fits my website as it is not too aggressive in its approach and it looks modern.
 
-PIC OF FONT HERE
+##### Barlow weight 400
+
+This is the font weight used for standard text such as inside the artist cards
+
+![Barlow400](static/docs/ci-ms3-calm.pdf)
+
+##### Barlow weight 700
+
+This is the font weight used for the bigger texts such as on the landing page
+
+![Barlow700](static/docs/ci-ms3-calm.pdf)
 
 #### Colors
 
