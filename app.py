@@ -81,7 +81,7 @@ def login():
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     return redirect(url_for(
-                        "profile",username=session["user"]))
+                        "get_artists",username=session["user"]))
             else:
                 # Invalid password match
                 flash("Incorrect Username and/or Password")
