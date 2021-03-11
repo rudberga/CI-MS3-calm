@@ -189,14 +189,15 @@ I have done a lot of testing throughout the project and below you will find it i
 
 ### Tests done in order to secure user stories
 
-| Test | Method | Expected | Result |
-|  | ------ | -------- | ------ |
+| User story | Method | Expected | Result |
+| ---------- | ------ | -------- | ------ |
 
 ### Tests done in order to secure UI components
 
 | Test | Method | Expected | Result |
 | ---- | ------ | -------- | ------ |
-| Buttons | ------ | -------- | ------ |
+| Buttons |  |  |  |
+| Log In | ------ | -------- | ------ |
 | Buttons 1 - Log In| Entered website and landed on index.html, pressed button 'Login' | Modal to pop up with form to log in | PASS - Modal pops up smoothly for the user to log in |
 | Buttons 2 - Log In| Inside modal for login press button 'Log In' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in username field |
 | Buttons 3 - Log In| Inside modal for login press button 'Log In' only filling in username | Info should pop up telling user that they need to fill in password | PASS - Info pop up telling user to fill in the password field |
@@ -207,8 +208,21 @@ I have done a lot of testing throughout the project and below you will find it i
 | Sign Up | ------ | -------- | ------ |
 | Buttons 8 - Sign Up| Entered website and landed on index.html, pressed button 'Sign Up' | Modal to pop up with form to register new user | PASS - Modal pops up smoothly for the user to sign up |
 | Buttons 9 - Sign Up | Inside modal for sign up press button 'Sign Up!' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
-| ---- | ------ | -------- | ------ |
-| ---- | ------ | -------- | ------ |
+| Buttons 10 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in username | Info should pop up telling user that they need to fill in password | PASS - Info pop up telling user to fill in the password field |
+| Buttons 11 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in password | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
+| Buttons 12 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in password | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
+| Buttons 13 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only checking box for terms | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
+| Buttons 14 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in username and password | Info should pop up telling user that they need to tick checkbox | PASS - Info pop up telling user to fill tick the box |
+| Buttons 15 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in either username and password and ticking the box | Info should pop up telling user that they need to fill in the field that is empy | PASS - Info pop up telling user to fill info |
+| Buttons 16 - Sign Up | Inside modal for sign up press button 'Sign Up!' when filling in a username that already exists | Info should pop up telling user that the username already exists | PASS - Info pop up telling the username already exists |
+| Buttons 17 - Sign Up | Inside modal for sign up press button 'Sign Up!' when filling in all new information and ticking checkbox | User should be redirected to profile page | PASS - user is redirected |
+| Navbar | ------ | -------- | ------ |
+| Buttons 18 - Navbar | Entered website and landed on index.html, pressed navbar button 'Login' | Modal for log in should pop up | PASS - modal pops up smoothly |
+| Buttons 19 - Navbar | Entered website and landed on index.html, pressed navbar button 'Sign Up' | Modal for signing up should pop up | PASS - modal pops up smoothly |
+| Buttons 20 - Navbar | Entered website and landed on index.html, pressed navbar button 'Artists' | User should be redirected to artists page | PASS - redirected to artists page |
+| Buttons 21 - Navbar | Entered website and landed on index.html, logged in, pressed navbar button 'Profile' | User should be redirected to profile page | PASS - redirected to profile page |
+| Buttons 22 - Navbar | Entered website and landed on index.html, logged in, pressed navbar button 'Logout' | User should be redirected to index page and logged out | PASS - redirected to index page and logged out |
+| Buttons 23 - Navbar | Navbar further tested to go back from each page | User should be redirected to page that the button says | PASS - redirected to page navbar button should lead to |
 | ---- | ------ | -------- | ------ |
 | ---- | ------ | -------- | ------ |
 
@@ -231,7 +245,7 @@ I have done a lot of testing throughout the project and below you will find it i
 | Styling of alert box disappeared | Solved by moving the style class to the correct div | Solved |
 
 
-### Browser and screen size responsiveness
+### Browser and screen size responsiveness testing
 
 Have done extensive testing in Chrome DevTools, different browsers as well as on physical devices I had access to. The website is responsive and it acts as it is supposed to when changing between devices, browsers and screen sizes.
 
