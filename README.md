@@ -189,18 +189,33 @@ I have done a lot of testing throughout the project and below you will find it i
 
 ### Tests done in order to secure user stories
 
-| Test | Method | Result |
-| ---- | ------ | ------ |
+| Test | Method | Expected | Result |
+|  | ------ | -------- | ------ |
 
 ### Tests done in order to secure UI components
 
-| Test | Method | Result |
-| ---- | ------ | ------ |
+| Test | Method | Expected | Result |
+| ---- | ------ | -------- | ------ |
+| Buttons | ------ | -------- | ------ |
+| Buttons 1 - Log In| Entered website and landed on index.html, pressed button 'Login' | Modal to pop up with form to log in | PASS - Modal pops up smoothly for the user to log in |
+| Buttons 2 - Log In| Inside modal for login press button 'Log In' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in username field |
+| Buttons 3 - Log In| Inside modal for login press button 'Log In' only filling in username | Info should pop up telling user that they need to fill in password | PASS - Info pop up telling user to fill in the password field |
+| Buttons 4 - Log In| Inside modal for login press button 'Log In' filling in incorrect username and password then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - alert box with information shows as expected |
+| Buttons 5 - Log In| Inside modal for login press button 'Log In' filling in correct username but wrong password then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - alert box with information shows as expected |
+| Buttons 6 - Log In| Inside modal for login press button 'Log In' filling in a correct password but wrong username then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - alert box with information shows as expected |
+| Buttons 7 - Log In| Inside modal for login press button 'Log In' filling in a correct username and password then press 'Log In' | User should be redirected to the Artist-page | PASS - user gets redirected to artist page |
+| Sign Up | ------ | -------- | ------ |
+| Buttons 8 - Sign Up| Entered website and landed on index.html, pressed button 'Sign Up' | Modal to pop up with form to register new user | PASS - Modal pops up smoothly for the user to sign up |
+| Buttons 9 - Sign Up | Inside modal for sign up press button 'Sign Up!' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
+| ---- | ------ | -------- | ------ |
+| ---- | ------ | -------- | ------ |
+| ---- | ------ | -------- | ------ |
+| ---- | ------ | -------- | ------ |
 
 ### Tests done in order to secure structural integrity
 
-| Test | Method | Result |
-| ---- | ------ | ------ |
+| Test | Method | Expected | Result |
+| ---- | ------ | -------- | ------ |
 
 ### Tests done for the whole workflow acting like a new user
 
