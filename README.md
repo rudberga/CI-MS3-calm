@@ -196,7 +196,7 @@ I have done a lot of testing throughout the project and below you will find it i
 
 | Test | Method | Expected | Result |
 | ---- | ------ | -------- | ------ |
-| Buttons / Forms |  |  |  |
+| Buttons |  |  |  |
 | Log In | ------ | -------- | ------ |
 | Buttons 1 - Log In| Entered website and landed on index.html, pressed button 'Login' | Modal to pop up with form to log in | PASS - result as expected |
 | Buttons 2 - Log In| Inside modal for login press button 'Log In' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - result as expected |
@@ -231,16 +231,21 @@ I have done a lot of testing throughout the project and below you will find it i
 | Buttons 5 - Newsletter | Clicked 'Submit' when filling in an e-mail that already exists | Alert box should pop up saying they are already subscribed | PASS - result as expected |
 | Artist page | ------ | -------- | ------ |
 | Buttons 1 - Artist page | Clicked on the artist card image | Information about artist should come up | PASS - result as expected |
-| ---- | ------ | -------- | ------ |
-| ---- | ------ | -------- | ------ |
-| ---- | ------ | -------- | ------ |
+| Buttons 2 - Artist page | Clicked on pen button on artist card | Redirect to edit artist page | PASS - result as expected |
+| Buttons 3 - Artist page | Clicked on trash can button | Warning should pop up asking user if they want to delete | PASS - result as expected |
+| Buttons 4 - Artist page | Clicked on plus button | Add artist modal should pop up | PASS - result as expected |
+| Buttons 5 - Artist page | Filled in search field and clicked on search icon | Search result should appear | PASS - result as expected |
+| Buttons 6 - Artist page | Left search field empty and clicked on search icon | No results should appear | PASS - result as expected |
+| Buttons 5 - Artist page | Filled in search field, clicked search and then the reset | Should empty search field and reset artist page | PASS - result as expected |
+| Social Links | ------ | -------- | ------ |
+| Buttons 1 - Social links| Clicked on each button for social links | Redirect to social links page on new tab | PASS - result as expected |
 
 ### Tests done in order to secure structural integrity
 
-| Test | Method | Expected | Result |
-| ---- | ------ | -------- | ------ |
+#### Modals
+#### Fonts
 
-### Tests done for the whole workflow acting like a new user
+### Tests done for forms
 
 ### Bugs
 
