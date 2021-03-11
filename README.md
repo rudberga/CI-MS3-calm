@@ -229,9 +229,17 @@ All errors and warnings are now gone.
 
 Pushed my JavaScript code through JSHint where no major issues showed up.
 
+| Message | Solution |
+| ------- | -------- |
+| No relevant warnings and no errors showing. | - |
+
 ### PEP8 - [Link](http://pep8online.com/)
 
 Pushed my Python code through PEP8 where only a few minor issues showed up, such as whitespace where it should not be. Everything is now solved and it does not show any issues anymore. 
+
+| Message | Solution |
+| ------- | -------- |
+| No relevant warnings and no errors showing. | - |
 
 ## Deployment
 
