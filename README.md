@@ -187,11 +187,6 @@ I have therefore focused on below colors:
 
 I have done a lot of testing throughout the project and below you will find it in a more structured manner. I have made sure that the user stories are tested and works well, also focused on responsiveness where I have used resources online as well as the physical devices I had access to. Whenever a new functionality of the site was implemented, I tested it. At the end of the development journey, I had a big testing day where I went through the sites full functionality again.
 
-### Tests done in order to secure user stories
-
-| User story | Method | Expected | Result |
-| ---------- | ------ | -------- | ------ |
-
 ### Tests done in order to secure UI components
 
 | Test | Method | Expected | Result |
@@ -343,6 +338,19 @@ Pushed my Python code through PEP8 where only a few minor issues showed up, such
 | Message | Solution |
 | ------- | -------- |
 | No relevant warnings and no errors showing. | - |
+
+### User stories result
+
+All of the testing and debugging above have left us with the result below on achieving the goal of our user stories listed in the top of this readme:
+
+| User story | Result |
+| User friendly layout | PASS |
+| Register account, add, edit & delete artists | PASS |
+| Preview of artists before signing up | PASS |
+| Users posts gathered on profile page | PASS |
+| Newsletter | PASS |
+| Access to social links | PASS |
+| Information about each artist | PASS |
 
 ## Deployment
 
