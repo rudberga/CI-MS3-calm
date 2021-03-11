@@ -196,7 +196,6 @@ I have done a lot of testing throughout the project and below you will find it i
 
 | Test | Method | Expected | Result |
 | ---- | ------ | -------- | ------ |
-| Buttons |  |  |  |
 | Log In | ------ | -------- | ------ |
 | Buttons 1 - Log In| Entered website and landed on index.html, pressed button 'Login' | Modal to pop up with form to log in | PASS - result as expected |
 | Buttons 2 - Log In| Inside modal for login press button 'Log In' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - result as expected |
@@ -243,7 +242,18 @@ I have done a lot of testing throughout the project and below you will find it i
 ### Tests done in order to secure structural integrity
 
 #### Modals
+
+Each modal implemented on the website was tested on several screen sizes and confirmed that it kept its responsive design.
+
+This includes the modals for:
+
+- Log in
+- Sign up
+- Add artist
+
 #### Fonts
+
+Fonts are consistent throughout the website, this was checked by simply controlling each part of the website with chrome dev tools.
 
 ### Tests done for forms
 
