@@ -1,12 +1,23 @@
-/* MAKE VARIABLES OF COLORS */
+/*--------------------------------- Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*--------------------------------- Variables */
+
+:root {
+  --mainBlue: #456268;
+  --lightBlue: #79a3b1;
+  --white: #fff;
+  --mainFont: 'Barlow', sans-serif;
+}
+
+/*--------------------------------- Base html */
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Barlow', sans-serif;
+    font-family: var(--mainFont);
 }
 
 main {
@@ -19,48 +30,6 @@ main {
     max-width: 15%;
 }
 
-/*--------------------------------- Index page */
-
-.text-landing {
-    margin-left: -20%;
-    margin-top: 12%;
-    color: hsla(0, 0%, 100%, 0.827);
-}
-
-.text-landing h2 {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-}
-
-.text-landing h3 {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-}
-
-.text-landing h5 {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-} 
-
-.text-or {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-/*--------------------------------- Edit Artists */
-
-.edit-artist-form {
-    color: #fff;
-}
-
-.edit-artist-form input {
-    color: #fff;
-}
-
-.edit-artist-form textarea {
-    color: #fff;
-}
-
 /*--------------------------------- Backgrounds */
 
 .bg-landing {
@@ -69,16 +38,16 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
-    background-image:linear-gradient(to left, transparent 50%, #456268 50%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+    background-image:linear-gradient(to left, transparent 50%, var(--mainBlue) 50%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
     width:100%;
 }
 
 .bg-profile {
-    background-color: #456268;
+    background-color: var(--mainBlue);
 }
 
 .bg-artists {
-    background-color: #456268;
+    background-color: var(--mainBlue);
 }
 
 .bg-landing-white {
@@ -86,7 +55,7 @@ main {
 }
 
 .bg-edit-artists {
-    background-color: #456268;
+    background-color: var(--mainBlue);
 }
 
 /*--------------------------------- Navbar */
@@ -105,8 +74,8 @@ main {
 }
 
 .sidenav {
-    background-color: #456268;
-    color: #fff;
+    background-color: var(--mainBlue);
+    color: var(--white);
 }
 
 .sidenav h4 {
@@ -115,12 +84,12 @@ main {
 }
 
 .sidenav li>a {
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
 }
 
 /*--------------------------------- Flash messages */
-
+/* CREDIT for alerts: https://codepen.io/pradeep1616/pen/LxaRRB */
 .flash-card {
     background-color: rgba(121, 163, 177, 0.800);
     width: 70%;
@@ -131,7 +100,7 @@ main {
 }
 
 .flash-card p {
-    color: #fff;
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -141,8 +110,36 @@ main {
     right: 10px;
     top: 10px;
     font-size: 20px;
-    color: white;
+    color: var(--white);
     cursor: pointer; 
+}
+
+/*--------------------------------- Index page */
+
+.text-landing {
+    margin-left: -20%;
+    margin-top: 12%;
+    color: hsla(0, 0%, 100%, 0.827);
+}
+
+.text-landing h2 {
+    font-family: var(--mainFont);
+    font-weight: 700;
+}
+
+.text-landing h3 {
+    font-family: var(--mainFont);
+    font-weight: 700;
+}
+
+.text-landing h5 {
+    font-family: var(--mainFont);
+    font-weight: 500;
+} 
+
+.text-or {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*--------------------------------- Artists page */
@@ -157,24 +154,38 @@ main {
 
 .title-artists {
     font-weight: 700;
-    color: #fff;
+    color: var(--white);
 }
 
 .text-artists {
-    color: #fff;
+    color: var(--white);
     background-color: transparent;
+}
+
+/*--------------------------------- Edit Artists */
+
+.edit-artist-form {
+    color: var(--white);
+}
+
+.edit-artist-form input {
+    color: var(--white);
+}
+
+.edit-artist-form textarea {
+    color: var(--white);
 }
 
 /*--------------------------------- Profile page */
 
 .title-profile {
     font-weight: 700;
-    color: #fff;
+    color: var(--white);
 }
 
 .cards-profile h4 {
     margin-bottom: 50px;
-    color: #fff;
+    color: var(--white);
 }
 
 /*--------------------------------- Modals */
@@ -182,28 +193,27 @@ main {
 
 .modal {
     border-radius: 10px;
-    /*background: linear-gradient(to right, #79a3b1 0%,#79a3b1 50%,#79a3b1 50%,white 50%,white 100%);*/
-    background-image:linear-gradient(to right, transparent 55%, #fff 55%), url('https://images.unsplash.com/photo-1506536329413-d2f0d31ceb9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+    background-image:linear-gradient(to right, transparent 55%, var(--white) 55%), url('https://images.unsplash.com/photo-1506536329413-d2f0d31ceb9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 }
 
 .modal h2 {
-    color: #456268;
+    color: var(--mainBlue);
     font-weight: 600;
 }
 
 .modal h3 {
-    color: #456268;
+    color: var(--mainBlue);
     font-weight: 600;
     margin-bottom: 50px;
 }
 
 .modal button {
-    background-color: #79a3b1;
+    background-color: var(--lightBlue);
     width: 100px;
 }
 
 .modal-add-artist {
-    background: #fff;
+    background: var(--white);
 }
 
 .username-sign-up {
@@ -275,19 +285,19 @@ main {
 }
 
 .btn-edit-artist-cancel {
-    background-color: #456268;
+    background-color: var(--mainBlue);
     border-radius: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 1px #fff solid;
+    border: 1px var(--white) solid;
 }
 
 .btn-edit-artist-finish {
-    background-color: #456268;
+    background-color: var(--mainBlue);
     border-radius: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 1px #fff solid;
+    border: 1px var(--white) solid;
 }
 
 .btn-nl-submit {
@@ -375,8 +385,6 @@ main {
   }
 }
 
-/* Making logo responsive */
-
 @media only screen and (max-width: 992px) {
   .brand-logo {
     max-width: 25%;
@@ -389,8 +397,6 @@ main {
   }
 }
 
-/* Making background responsive */
-
 @media only screen and (max-width: 992px) {
   .bg-landing {
     height: 100%;
@@ -398,7 +404,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
-    background-image:linear-gradient(to left, transparent 35%, #456268 35%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+    background-image:linear-gradient(to left, transparent 35%, var(--mainBlue) 35%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
     width:100%;
     }
 }
@@ -410,7 +416,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
-    background-image:linear-gradient(to left, transparent 20%, #456268 20%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+    background-image:linear-gradient(to left, transparent 20%, var(--mainBlue) 20%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
     width:100%;
     }
 }
