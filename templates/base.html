@@ -15,6 +15,20 @@
     <title>Calm - find your music</title>
 </head>
 
+{% block additional_styles %}
+<style>
+   body {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
+    background-image:linear-gradient(to left, transparent 50%, var(--mainBlue) 50%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+    width:100%;
+   }
+</style>
+{% endblock %}
+
 <header>
     <!-- Top navbar -->
     <nav class="transparent nav-shadow">
