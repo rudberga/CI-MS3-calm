@@ -48,7 +48,7 @@ $("#add_artist_form").on("submit", function(e) {
         nationality: $("#nationality").val(),
         image: $("#image").val(),
         spotify: $("#spotify").val(),
-    }
+    };
     // If "vocals" is checked, add the vocals item to the data to be sent to the server
     if ($("#vocals").prop("checked")) {
         artist.vocals = "on";
