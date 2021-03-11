@@ -178,6 +178,9 @@ I have therefore focused on below colors:
 
 - [Canva](https://www.canva.com/)
    - Used for making main icon. Imported locally through assets/img
+
+- [Jinja](http://jinja.palletsprojects.com/)
+   - Templating language used in this app
    
 
 ## Testing 
@@ -217,8 +220,10 @@ Pushed my HTML code through the validator and got following messages which I cor
 
 | Message | Solution |
 | ------- | -------- |
+| Attribute a not allowed on element a at this point | Solved by removing one "a" in the tag as it accidentally was two of them |
+| Character reference was not terminated by a semicolon | Solved by adding ";" to the end of the emojis |
 
-All errors and warnings are now gone.
+Because I am using the jinja templating language in this app, there is bound to show some warnings connected to that. These warnings are safe to disregard as they are not true errors for the application.
 
 ### CSS Validator (W3C CSS) - [Link](https://jigsaw.w3.org/css-validator)
 
