@@ -255,7 +255,33 @@ This includes the modals for:
 
 Fonts are consistent throughout the website, this was checked by simply controlling each part of the website with chrome dev tools.
 
-### Tests done for forms
+### Testing forms + Post & Get to/from DB
+
+As the website rely heavily on its forms for both user authentication as well as adding and editing artist cards, extensive testing on them was made. 
+
+#### Login 
+Tested by:
+- entering correct login info and logging in, got the data correctly from DB everytime
+- entering incorrect login info and trying to login
+- entering nothing and trying to login
+
+#### Sign Up
+Tested by:
+- entering new user information and click sign up, posted the information correctly to DB everytime
+- entering already existing user information, got the already registered user information everytime
+- entering nothing and trying to sign up
+
+
+#### Add Artist 
+Tested by:
+- entering new artist information and click add, posted the information correctly to DB everytime
+- entering already existing artist information, function for get in this case is still under development
+- tested leaving fields empty to see that it did not work to add
+
+#### Edit Artist 
+Tested by:
+- changing one field and click add, updated the data in DB everytime
+- changing fields and click cancel, did not change anything
 
 ### Bugs
 
