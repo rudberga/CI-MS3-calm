@@ -369,30 +369,6 @@ main {
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .bg-landing {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
-    background-image:linear-gradient(to left, transparent 35%, var(--mainBlue) 35%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
-    width:100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-  .bg-landing {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
-    background-image:linear-gradient(to left, transparent 20%, var(--mainBlue) 20%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
-    width:100%;
-    }
-}
-
 @media only screen and (max-width: 600px) {
   .modal {
     background-image: url('https://images.unsplash.com/photo-1506536329413-d2f0d31ceb9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
