@@ -194,6 +194,12 @@ I have done a lot of testing throughout the project and below you will find it i
 
 | Bug | Solution | Current status |
 | --- | -------- | -------------- |
+| Connection to MongoDB stopped working after changing geolocation from Japan to Sweden | Solved by creating a new cluster with the server based in Germany instead of Singapore | Solved |
+| When searching for an artist the error message "pymongo.errors.OperationFailure" shows up | Solved by creating a new search index via the CLI which was missed when creating a new cluster | Solved |
+| Logo does not show on profile page | Solved by adding a "url_for" in order to get the picture instead of a direct path | Solved |
+| Genre dropdown in modal for add artist does not generate any options | Solved by adding a get method to get genres from db in the "get_artist" function | Solved |
+| Login forms fields are difficult to mark and fill in | Solved by adding "pointer-events: none" directly to html | Solved |
+| Styling of alert box disappeared | Solved by moving the style class to the correct div | Solved |
 
 
 ### Browser and screen size responsiveness
