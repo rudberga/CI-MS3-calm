@@ -1,55 +1,62 @@
 {% extends "base.html" %}
+<!-- Background for index page -->
 {% block styles %}
-        <style>
-   body {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
-    background-image:linear-gradient(to left, transparent 50%, var(--mainBlue) 50%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
-    width:100%;
-   }
+<style>
+    body {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*CREDIT half background img half color: https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background*/
+        background-image: linear-gradient(to left, transparent 50%, var(--mainBlue) 50%), url('https://images.unsplash.com/photo-1563459802257-2a97df940f11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+        width: 100%;
+    }
 </style>
-    {% endblock %}
+{% endblock %}
 {% block content %}
 
-<section>
-    <div class="row text-landing">
-        <div class="col m7 s6">
-            {% if session.user %}
-            <form class="" method="POST" action="{{ url_for('add_newsletter') }}" >   
-                <h3>Want the latest additions sent straight to your inbox? Sign up for our newsletter below!</h3>
-                    <div class="input-field col m6">
-                        <input id="email" name="email" type="email" class="validate" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="row">
-                        <div class="col m4 offset-m6">
-                            <button class="btn waves-effect waves-light btn-nl-submit" type="submit">
-                                <strong>Submit!</strong>
-                            </button>
+    <section>
+        <!-- Landing page -->
+        <div class="row text-landing">
+            <div class="col m7 s6">
+                {% if session.user %}
+                    <!-- Newsletter -->
+                    <form class="" method="POST" action="{{ url_for('add_newsletter') }}">
+                        <h3>Want the latest additions sent straight to your inbox? Sign up for our newsletter below!</h3>
+                        <div class="input-field col m6">
+                            <input id="email" name="email" type="email" class="validate" required>
+                            <label for="email">Email</label>
                         </div>
-                    </div>
-                </form>
-            {% else %}
-                <h2>Looking for calm music?</h2>
-                <h5>Find new artists and add your own - get started below!</h5>
-            {% endif %}
+                        <div class="row">
+                            <div class="col m4 offset-m6">
+                                <!-- Button submit -->
+                                <button class="btn waves-effect waves-light btn-nl-submit" type="submit">
+                                    <strong>Submit!</strong>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                {% else %}
+                    <!-- User not logged in landing page -->
+                    <h2>Looking for calm music?</h2>
+                    <h5>Find new artists and add your own - get started below!</h5>
+                {% endif %}
+            </div>
         </div>
-    </div>
-    <div class="row btn-landing m7 s6">
-        <div class="col">
-            {% if session.user %}
-            {% else %}
-            <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn ">
-                <strong>Login</strong></a>
-            <span class="text-or"><strong>or</strong></span>
-            <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn">
-                <strong>Sign up</strong></a>
-            {% endif %}
+        <div class="row btn-landing m7 s6">
+            <div class="col">
+                {% if session.user %}
+                {% else %}
+                <!-- Log in button -->
+                <a href="{{ url_for('login') }}" data-target="modal1" class="modal-trigger waves-effect btn ">
+                    <strong>Login</strong></a>
+                <span class="text-or"><strong>or</strong></span>
+                <!-- Sign up button -->
+                <a a href="{{ url_for('sign_up') }}" data-target="modal2" class="modal-trigger waves-effect btn">
+                    <strong>Sign up</strong></a>
+                {% endif %}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 {% endblock %}
