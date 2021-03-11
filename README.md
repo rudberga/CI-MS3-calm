@@ -229,7 +229,9 @@ All errors and warnings are now gone.
 
 Pushed my JavaScript code through JSHint where no major issues showed up.
 
-### TESTING FOR PYTHON SQL ETC.
+### PEP8 - [Link](http://pep8online.com/)
+
+Pushed my Python code through PEP8 where only a few minor issues showed up, such as whitespace where it should not be. Everything is now solved and it does not show any issues anymore. 
 
 ## Deployment
 
