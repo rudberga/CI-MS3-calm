@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +9,14 @@
         type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
+    <!-- Standard background -->
     {% block styles %}
-<style>
-   body {
-    background-color: var(--mainBlue);
-   }
-</style>
-{% endblock %}
+        <style>
+            body {
+                background-color: var(--mainBlue);
+            }
+        </style>
+    {% endblock %}
     <title>Calm - find your music</title>
 </head>
 
@@ -61,7 +61,6 @@
 <section>
     <!-- Flash messages -->
     <!-- CREDIT for alerts: https://codepen.io/pradeep1616/pen/LxaRRB -->
-
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
@@ -84,7 +83,6 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-
 </section>
 
 <body>
@@ -94,9 +92,7 @@
         {% endblock %}
     </main>
 
-    <!-- Sign up -->
-
-    <!-- Modal -->
+    <!-- Sign up modal -->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <div class="row">
@@ -122,14 +118,18 @@
                     <div class="col">
                         <label>
                             <input type="checkbox" required />
-                            <span>I accept the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank">Terms and Conditions</a></span>
+                            <span>I accept the 
+                                <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+                                    target="_blank">Terms and Conditions</a>
+                            </span>
                         </label>
                     </div>
                     <!-- Sign Up button -->
                     <div class="row">
                         <div>
-                            <button class="btn btn-sign-up-modal waves-effect waves-light right" type="submit">Sign
-                                Up!</button>
+                            <button class="btn btn-sign-up-modal waves-effect waves-light right" type="submit">
+                                Sign Up!
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -137,8 +137,7 @@
         </div>
     </div>
 
-    <!-- Log in -->
-    <!-- Modal -->
+    <!-- Log in modal -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <div class="row">
@@ -163,7 +162,10 @@
                     <!-- Log In button -->
                     <div class="row">
                         <div>
-                            <button class="btn waves-effect waves-light btn-modal btn-sign-up-modal right" type="submit"> Log In </button>
+                            <button class="btn waves-effect waves-light btn-modal btn-sign-up-modal right"
+                                type="submit"> 
+                                Log In 
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -190,5 +192,4 @@
     {% block scripts %}
     {% endblock %}
 </body>
-
 </html>
