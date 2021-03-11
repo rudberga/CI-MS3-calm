@@ -222,8 +222,13 @@ All errors and warnings are now gone.
 
 ### CSS Validator (W3C CSS) - [Link](https://jigsaw.w3.org/css-validator)
 
+Pushed my CSS code through the validator and got following messages which I corrected:
+
 | Message | Solution |
 | ------- | -------- |
+| Value Error background-color 'none' is not a background-color value 'none' | Solved by adding 'transparent' instead of 'none' |
+
+Also received a few warnings including for the variables created in CSS, I decide to disregard these warnings as I am confident that they do not pose any error for the website.
 
 ### JSHint - [Link](https://jshint.com/)
 
