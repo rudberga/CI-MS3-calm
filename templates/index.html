@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="bg-landing">
+<body class="bg-landing">
+<section>
     <div class="row text-landing">
         <div class="col m7 s6">
             {% if session.user %}
@@ -38,5 +39,6 @@
         </div>
     </div>
 </section>
+</body>
 
 {% endblock %}
