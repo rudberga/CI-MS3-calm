@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="title-artists center-align">
-        <h1><strong>Artists</strong></h1>
-    </div>
-    <!-- Search field -->
-    {% if session.user %}
+<div class="title-artists center-align">
+    <h1><strong>Artists</strong></h1>
+</div>
+
+<!-- Search field -->
+{% if session.user %}
     <div class="row">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
@@ -14,110 +15,115 @@
                     <label for="query">Search Artists (name, genre or nationality)</label>
                 </div>
                 <div class="col s2 m4">
+                    <!-- Search button -->
                     <button type="submit" class="btn btn-search">
                         <i class="fas fa-search"></i>
                     </button>
+                    <!-- Undo button -->
                     <a href="{{ url_for('get_artists') }}" class="btn btn-undo">
                         <i class="fas fa-undo"></i>
                     </a>
                     <!-- Add artist modal trigger button -->
-                    <button type="submit" class="btn btn-add-artist modal-trigger"
-                        data-target="modal3">
-                    <i class="fas fa-plus"></i>
+                    <button type="submit" class="btn btn-add-artist modal-trigger" data-target="modal3">
+                        <i class="fas fa-plus"></i>
                     </button>
                 </div>
             </div>
         </form>
     </div>
-    {% else %}
+<!-- Text showing when user not logged in -->
+{% else %}
     <div class="center-align text-artists">
-        <p><i class="fas fa-info-circle"></i> <strong>To enjoy the full functionality of the website such as search and add your own artists, log in or sign up!</strong></p>
+        <p><i class="fas fa-info-circle"></i> <strong>To enjoy the full functionality of the website 
+            such as search and add your own artists, log in or sign up!</strong></p>
     </div>
-    {% endif %}
-    <!-- Add artist modal -->
-    <div id="modal3" class="modal modal-add-artist">
-        <div class="modal-content">
-            <h3 class="center-align">Add Artist</h3>
-            <div class="row">
-                <form id="add_artist_form" class="col s12" method="POST" action="{{ url_for('add_artist') }}">
-                    <!-- Genre options -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <select id="genre_name" name="genre_name" class="validate" required>
-                                <option value="" disabled selected>Genres</option>
-                                {% for genre in genres %}
-                                    <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
-                                {% endfor %}
-                            </select>
-                            <label for="genre_name">Choose genre</label>
+{% endif %}
+
+<!-- Add artist modal -->
+<div id="modal3" class="modal modal-add-artist">
+    <div class="modal-content">
+        <h3 class="center-align">Add Artist</h3>
+        <div class="row">
+            <form id="add_artist_form" class="col s12" method="POST" action="{{ url_for('add_artist') }}">
+                <!-- Genre options -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select id="genre_name" name="genre_name" class="validate" required>
+                            <option value="" disabled selected>Genres</option>
+                            {% for genre in genres %}
+                                <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="genre_name">Choose genre</label>
+                    </div>
+                </div>
+                <!-- Artist name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-signature prefix"></i>
+                        <input id="artist_name" name="artist_name" minlength="2" maxlength="50" type="text"
+                            class="validate" required>
+                        <label for="artist_name">Full Name (e.g. Brian Eno...)</label>
+                    </div>
+                </div>
+                <!-- Nationality -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-flag prefix"></i>
+                        <textarea id="nationality" name="nationality" minlength="1" maxlength="100"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="nationality">Nationality (e.g. Japan)</label>
+                    </div>
+                </div>
+                <!-- Image URL -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-image prefix tooltipped" data-position="top"
+                            data-tooltip="Do an image search on google.com, right-click the image and press 'Copy image address'. Now paste that link into this field!"></i>
+                        <textarea id="image" name="image" minlength="5" maxlength="200"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="image">Image URL (Hover or click icon to the left for guide)</label>
+                    </div>
+                </div>
+                <!-- Spotify URL -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fab fa-spotify prefix tooltipped" data-position="top"
+                            data-tooltip="Find your artist on Spotify, click the three dots by artist name, click share and then 'Copy Artist Link'. Now paste that link into this field!"></i>
+                        <textarea id="spotify" name="spotify" minlength="5" maxlength="200"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="spotify">Spotify URL (Hover or click icon to the left for guide)</label>
+                    </div>
+                </div>
+                <!-- Vocals -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="switch">
+                            <i class="fas fa-microphone prefix"></i>
+                            <label for="vocals">
+                                <input type="checkbox" id="vocals" name="vocals">
+                                <span class="lever"></span>
+                                Vocals (NO - YES)
+                            </label>
                         </div>
                     </div>
-                    <!-- Artist name -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="fas fa-signature prefix"></i>
-                            <input id="artist_name" name="artist_name" minlength="2" maxlength="50" type="text"
-                                class="validate" required>
-                            <label for="artist_name">Full Name (e.g. Brian Eno...)</label>
-                        </div>
+                </div>
+                <!-- Add button -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn btn-add-artist-modal">
+                            <i class="fas fa-plus"></i>
+                        </button>
                     </div>
-                    <!-- Nationality -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="fas fa-flag prefix"></i>
-                            <textarea id="nationality" name="nationality" minlength="1" maxlength="100"
-                                class="materialize-textarea validate" required></textarea>
-                            <label for="nationality">Nationality (e.g. Japan)</label>
-                        </div>
-                    </div>
-                    <!-- Image URL -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="fas fa-image prefix tooltipped" data-position="top" 
-                                data-tooltip="Do an image search on google.com, right-click the image and press 'Copy image address'. Now paste that link into this field!"></i>
-                            <textarea id="image" name="image" minlength="5" maxlength="200"
-                                class="materialize-textarea validate" required></textarea>
-                            <label for="image">Image URL (Hover or click icon to the left for guide)</label>
-                        </div> 
-                    </div>
-                    <!-- Spotify URL -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="fab fa-spotify prefix tooltipped" data-position="top" 
-                                data-tooltip="Find your artist on Spotify, click the three dots by artist name, click share and then 'Copy Artist Link'. Now paste that link into this field!"></i>
-                            <textarea id="spotify" name="spotify" minlength="5" maxlength="200"
-                                class="materialize-textarea validate" required></textarea>
-                            <label for="spotify">Spotify URL (Hover or click icon to the left for guide)</label>
-                        </div>
-                    </div>
-                    <!-- Vocals -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <div class="switch">
-                                <i class="fas fa-microphone prefix"></i>
-                                <label for="vocals">
-                                    <input type="checkbox" id="vocals" name="vocals">
-                                    <span class="lever"></span>
-                                    Vocals (NO - YES)
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add button -->
-                    <div class="row">
-                        <div class="col s12 center-align">
-                            <button type="submit" class="btn btn-add-artist-modal">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
-    <!-- Artist cards -->
-    <div id="artists_container" class="row">
-        {% for artist in artists %}
+</div>
+
+<!-- Artist cards -->
+<div id="artists_container" class="row">
+    {% for artist in artists %}
         <div class="col s12 m4">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -129,33 +135,35 @@
                         <p>{{ artist.genre_name }}</p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><strong>{{ artist.artist_name }} </strong><i
-                            class="fas fa-chevron-down right"></i></span>
+                    <span class="card-title grey-text text-darken-4"><strong>{{ artist.artist_name }} </strong>
+                        <i class="fas fa-chevron-down right"></i></span>
                     <p>Genre: {{ artist.genre_name }}</p>
                     <p>Nationality: {{ artist.nationality }}</p>
                     {% if artist.vocals == "on" %}
-                    Vocals: <i class="fas fa-microphone"></i>
+                        Vocals: <i class="fas fa-microphone"></i>
                     {% endif %}
                     {% if artist.vocals == "off" %}
-                    Vocals: <i class="fas fa-microphone-slash"></i>
+                        Vocals: <i class="fas fa-microphone-slash"></i>
                     {% endif %}
                     <p><em>Added by: {{ artist.created_by }}</em></p>
                     {% if session.user|lower == artist.created_by|lower %}
-                    <a href="{{ url_for('delete_artist', artist_id=artist._id) }}"
-                        onclick="return confirm('Do you want to delete this artist?');"
-                        class="btn-delete right"><i class="fas fa-trash hvr-fade-edit-delete"></i></a>
-                    <a href="{{ url_for('edit_artist', artist_id=artist._id) }}"
-                        class="btn-edit right"><i class="fas fa-pen hvr-fade-edit-delete"></i></a>
+                        <a href="{{ url_for('delete_artist', artist_id=artist._id) }}"
+                            onclick="return confirm('Do you want to delete this artist?');" class="btn-delete right"><i
+                                class="fas fa-trash hvr-fade-edit-delete"></i></a>
+                        <a href="{{ url_for('edit_artist', artist_id=artist._id) }}" class="btn-edit right"><i
+                                class="fas fa-pen hvr-fade-edit-delete"></i></a>
                     {% endif %}
                 </div>
             </div>
         </div>
-        {% endfor %}
-    </div>
-    {% if artists|length < 1 %}
-    <h3 id ="no_results_text" class="red-text text-darken-4 center-align">No Results Found</h3>
-    {% endif %}
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/artists.js') }}"></script>
+    {% endfor %}
+</div>
+<!-- Text showing when having no search results -->
+{% if artists|length < 1 %}
+    <h3 id="no_results_text" class="red-text text-darken-4 center-align">No Results Found</h3>
+{% endif %}
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/artists.js') }}"></script>
 {% endblock %}
