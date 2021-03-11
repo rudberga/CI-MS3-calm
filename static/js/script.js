@@ -31,7 +31,7 @@ $(document).ready(function(){
                 });
             }
         });
-    };
+    }
 });
 
 // Alert for flash messages
