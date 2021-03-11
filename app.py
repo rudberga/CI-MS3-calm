@@ -19,6 +19,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 # Landing page
 @app.route("/")
 @app.route("/get_home")
@@ -63,7 +64,7 @@ def sign_up():
         # Put new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful! Enjoy!")
-        return redirect(url_for("profile",username=session["user"]))
+        return redirect(url_for("profile", username=session["user"]))
     return render_template("index.html")
 
 
@@ -78,10 +79,10 @@ def login():
         if existing_user:
             # Ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     return redirect(url_for(
-                        "get_artists",username=session["user"]))
+                        "get_artists", username=session["user"]))
             else:
                 # Invalid password match
                 flash("Incorrect Username and/or Password")
@@ -91,7 +92,7 @@ def login():
             # Username does not exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-    
+
     return render_template("index.html")
 
 
@@ -171,6 +172,7 @@ def delete_artist(artist_id):
     mongo.db.artists.remove({"_id": ObjectId(artist_id)})
     flash("Artist Successfully Deleted")
     return redirect(url_for("get_artists"))
+
 
 # Add e-mail to db for newsletter functionality
 @app.route("/newsletter", methods=["GET", "POST"])
