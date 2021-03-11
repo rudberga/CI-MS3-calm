@@ -70,7 +70,7 @@ main {
 }
 
 .nav-wrapper ul li:hover {
-    background-color: none;
+    background-color: transparent;
 }
 
 .sidenav {
