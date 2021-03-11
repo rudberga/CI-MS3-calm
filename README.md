@@ -184,14 +184,25 @@ I have therefore focused on below colors:
    
 
 ## Testing 
-## UPDATE THIS SECTION
 
-I have done a lot of testing throughout the project and below you will find it in a more structured manner. I have made sure that the user stories are tested and works well, also focused on responsiveness where I have used resources online as well as the physical devices I had access to.
+I have done a lot of testing throughout the project and below you will find it in a more structured manner. I have made sure that the user stories are tested and works well, also focused on responsiveness where I have used resources online as well as the physical devices I had access to. Whenever a new functionality of the site was implemented, I tested it. At the end of the development journey, I had a big testing day where I went through the sites full functionality again.
 
 ### Tests done in order to secure user stories
 
 | Test | Method | Result |
 | ---- | ------ | ------ |
+
+### Tests done in order to secure UI components
+
+| Test | Method | Result |
+| ---- | ------ | ------ |
+
+### Tests done in order to secure structural integrity
+
+| Test | Method | Result |
+| ---- | ------ | ------ |
+
+### Tests done for the whole workflow acting like a new user
 
 ### Bugs
 
