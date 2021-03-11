@@ -198,39 +198,39 @@ I have done a lot of testing throughout the project and below you will find it i
 | ---- | ------ | -------- | ------ |
 | Buttons / Forms |  |  |  |
 | Log In | ------ | -------- | ------ |
-| Buttons 1 - Log In| Entered website and landed on index.html, pressed button 'Login' | Modal to pop up with form to log in | PASS - Modal pops up smoothly for the user to log in |
-| Buttons 2 - Log In| Inside modal for login press button 'Log In' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in username field |
-| Buttons 3 - Log In| Inside modal for login press button 'Log In' only filling in username | Info should pop up telling user that they need to fill in password | PASS - Info pop up telling user to fill in the password field |
-| Buttons 4 - Log In| Inside modal for login press button 'Log In' filling in incorrect username and password then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - alert box with information shows as expected |
-| Buttons 5 - Log In| Inside modal for login press button 'Log In' filling in correct username but wrong password then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - alert box with information shows as expected |
-| Buttons 6 - Log In| Inside modal for login press button 'Log In' filling in a correct password but wrong username then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - alert box with information shows as expected |
-| Buttons 7 - Log In| Inside modal for login press button 'Log In' filling in a correct username and password then press 'Log In' | User should be redirected to the Artist-page | PASS - user gets redirected to artist page |
+| Buttons 1 - Log In| Entered website and landed on index.html, pressed button 'Login' | Modal to pop up with form to log in | PASS - result as expected |
+| Buttons 2 - Log In| Inside modal for login press button 'Log In' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - result as expected |
+| Buttons 3 - Log In| Inside modal for login press button 'Log In' only filling in username | Info should pop up telling user that they need to fill in password | PASS - result as expected |
+| Buttons 4 - Log In| Inside modal for login press button 'Log In' filling in incorrect username and password then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - result as expected |
+| Buttons 5 - Log In| Inside modal for login press button 'Log In' filling in correct username but wrong password then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - result as expected |
+| Buttons 6 - Log In| Inside modal for login press button 'Log In' filling in a correct password but wrong username then press 'Log In' | Alert box should come up telling user either password or username are wrong | PASS - result as expected |
+| Buttons 7 - Log In| Inside modal for login press button 'Log In' filling in a correct username and password then press 'Log In' | User should be redirected to the Artist-page | PASS - result as expected |
 | Sign Up | ------ | -------- | ------ |
-| Buttons 1 - Sign Up| Entered website and landed on index.html, pressed button 'Sign Up' | Modal to pop up with form to register new user | PASS - Modal pops up smoothly for the user to sign up |
-| Buttons 2 - Sign Up | Inside modal for sign up press button 'Sign Up!' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
-| Buttons 3 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in username | Info should pop up telling user that they need to fill in password | PASS - Info pop up telling user to fill in the password field |
-| Buttons 4 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in password | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
-| Buttons 5 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in password | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
-| Buttons 6 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only checking box for terms | Info should pop up telling user that they need to fill in username | PASS - Info pop up telling user to fill in the username field |
-| Buttons 7 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in username and password | Info should pop up telling user that they need to tick checkbox | PASS - Info pop up telling user to fill tick the box |
-| Buttons 8 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in either username and password and ticking the box | Info should pop up telling user that they need to fill in the field that is empy | PASS - Info pop up telling user to fill info |
-| Buttons 9 - Sign Up | Inside modal for sign up press button 'Sign Up!' when filling in a username that already exists | Info should pop up telling user that the username already exists | PASS - Info pop up telling the username already exists |
-| Buttons 10 - Sign Up | Inside modal for sign up press button 'Sign Up!' when filling in all new information and ticking checkbox | User should be redirected to profile page | PASS - user is redirected |
+| Buttons 1 - Sign Up| Entered website and landed on index.html, pressed button 'Sign Up' | Modal to pop up with form to register new user | PASS - result as expected |
+| Buttons 2 - Sign Up | Inside modal for sign up press button 'Sign Up!' without filling in anything | Info should pop up telling user that they need to fill in username | PASS - result as expected |
+| Buttons 3 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in username | Info should pop up telling user that they need to fill in password | PASS - result as expected |
+| Buttons 4 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in password | Info should pop up telling user that they need to fill in username | PASS - result as expected |
+| Buttons 5 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in password | Info should pop up telling user that they need to fill in username | PASS - result as expected |
+| Buttons 6 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only checking box for terms | Info should pop up telling user that they need to fill in username | PASS - result as expected |
+| Buttons 7 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in username and password | Info should pop up telling user that they need to tick checkbox | PASS - result as expected|
+| Buttons 8 - Sign Up | Inside modal for sign up press button 'Sign Up!' when only filling in either username and password and ticking the box | Info should pop up telling user that they need to fill in the field that is empy | PASS - result as expected |
+| Buttons 9 - Sign Up | Inside modal for sign up press button 'Sign Up!' when filling in a username that already exists | Info should pop up telling user that the username already exists | PASS - result as expected |
+| Buttons 10 - Sign Up | Inside modal for sign up press button 'Sign Up!' when filling in all new information and ticking checkbox | User should be redirected to profile page | PASS - result as expected |
 | Navbar | ------ | -------- | ------ |
-| Buttons 1 - Navbar | Entered website and landed on index.html, pressed navbar button 'Login' | Modal for log in should pop up | PASS - modal pops up smoothly |
-| Buttons 2 - Navbar | Entered website and landed on index.html, pressed navbar button 'Sign Up' | Modal for signing up should pop up | PASS - modal pops up smoothly |
-| Buttons 3 - Navbar | Entered website and landed on index.html, pressed navbar button 'Artists' | User should be redirected to artists page | PASS - redirected to artists page |
-| Buttons 4 - Navbar | Entered website and landed on index.html, logged in, pressed navbar button 'Profile' | User should be redirected to profile page | PASS - redirected to profile page |
-| Buttons 5 - Navbar | Entered website and landed on index.html, logged in, pressed navbar button 'Logout' | User should be redirected to index page and logged out | PASS - redirected to index page and logged out |
-| Buttons 6 - Navbar | Navbar further tested to go back from each page | User should be redirected to page that the button says | PASS - redirected to page navbar button should lead to |
+| Buttons 1 - Navbar | Entered website and landed on index.html, pressed navbar button 'Login' | Modal for log in should pop up | PASS - result as expected |
+| Buttons 2 - Navbar | Entered website and landed on index.html, pressed navbar button 'Sign Up' | Modal for signing up should pop up | PASS - result as expected |
+| Buttons 3 - Navbar | Entered website and landed on index.html, pressed navbar button 'Artists' | User should be redirected to artists page | PASS - result as expected |
+| Buttons 4 - Navbar | Entered website and landed on index.html, logged in, pressed navbar button 'Profile' | User should be redirected to profile page | PASS - result as expected |
+| Buttons 5 - Navbar | Entered website and landed on index.html, logged in, pressed navbar button 'Logout' | User should be redirected to index page and logged out | PASS - result as expected |
+| Buttons 6 - Navbar | Navbar further tested to go back from each page | User should be redirected to page that the button says | PASS - result as expected |
 | Newsletter | ------ | -------- | ------ |
-| Buttons 1 - Newsletter | Clicked logo 'Calm' when logged in | User should be redirected to the index page with newsletter form | PASS - redirected to index page |
-| Buttons 2 - Newsletter | Clicked 'Submit' without filling in anything | Info should pop up telling user that they need to fill in the email | PASS - info pop up telling user to fill in |
-| Buttons 3 - Newsletter | Clicked 'Submit' when filling in an e-mail with wrong format | Info should pop up telling user that they need to fill in correct format | PASS - info pop up telling user to fill in correct format |
-| Buttons 4 - Newsletter | Clicked 'Submit' when filling in an e-mail correctly | Alert box should pop up saying they are subscribed | PASS - info pop up telling user they are subscribed |
-| Buttons 5 - Newsletter | Clicked 'Submit' when filling in an e-mail that already exists | Alert box should pop up saying they are already subscribed | PASS - info pop up telling user they are subscribed |
-| ---- | ------ | -------- | ------ |
-| ---- | ------ | -------- | ------ |
+| Buttons 1 - Newsletter | Clicked logo 'Calm' when logged in | User should be redirected to the index page with newsletter form | PASS - result as expected |
+| Buttons 2 - Newsletter | Clicked 'Submit' without filling in anything | Info should pop up telling user that they need to fill in the email | PASS - result as expected |
+| Buttons 3 - Newsletter | Clicked 'Submit' when filling in an e-mail with wrong format | Info should pop up telling user that they need to fill in correct format | PASS - result as expected |
+| Buttons 4 - Newsletter | Clicked 'Submit' when filling in an e-mail correctly | Alert box should pop up saying they are subscribed | PASS - result as expected |
+| Buttons 5 - Newsletter | Clicked 'Submit' when filling in an e-mail that already exists | Alert box should pop up saying they are already subscribed | PASS - result as expected |
+| Artist page | ------ | -------- | ------ |
+| Buttons 1 - Artist page | Clicked on the artist card image | Information about artist should come up | PASS - result as expected |
 | ---- | ------ | -------- | ------ |
 | ---- | ------ | -------- | ------ |
 | ---- | ------ | -------- | ------ |
