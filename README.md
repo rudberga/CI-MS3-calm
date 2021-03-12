@@ -309,7 +309,7 @@ Pushed my HTML code through the validator and got following messages which I cor
 | Character reference was not terminated by a semicolon | Solved by adding ";" to the end of the emojis |
 | An img element must have an alt attribute, except under certain conditions. | Solved by adding alt that was missing |
 
-Because I am using the jinja templating language in this app, there is bound to show a lot of warnings and errors connected to that. These warnings and errors are safe to disregard as they are not true errors for the application.
+**IMPORTANT!** Because I am using the jinja templating language in this app, there is bound to show a lot of warnings and errors connected to that. These warnings and errors have been checked and controlled and are deemed to be safe to disregard as they are not true errors for the application.
 
 ### CSS Validator (W3C CSS) - [Link](https://jigsaw.w3.org/css-validator)
 
