@@ -402,7 +402,9 @@ In order to deploy my website I used Heroku. The deployment was made from the ma
  16. Click "Add" and enter the information below:
 
 `IP` : `0.0.0.0`
+
 `PORT`: `5000`
+
 `MONGO_URI` : `PASTE THE CONNECTION STRING COPIED FROM MONGODB`
 
 - IMPORTANT! Inside the connection string, replace `<password>`with your MongoDB Database access password
