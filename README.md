@@ -462,7 +462,7 @@ After these basic steps you will have to take further steps in order to make you
 
 `os.environ.setdefault("SECRET_KEY", "replace this with your own secret key")`
 
-`os.environ.setdefault("MONGO_URI","your mongo URI copied in step 6, replace < password > with your MongoDB Database access password")`
+`os.environ.setdefault("MONGO_URI","your mongo URI copied in step 6, replace < password > with your MongoDB Database access password. replace < test > with the name of the database of your project")`
 
 `os.environ.setdefault("MONGO_DBNAME", "calm")`
 
