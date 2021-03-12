@@ -355,14 +355,64 @@ All of the testing and debugging above have left us with the result below on ach
 
 ## Deployment
 
-In order to deploy my website I used GitHub pages. The deployment was made from the master branch and I did it through below steps:
+In order to deploy my website I used Heroku. The deployment was made from the master branch and I did it through below steps:
 
- 1. Enter GitHub website and log in
- 2. Go to my GitHub repository called **CI-MS3-calm-music**
- 3. Press **settings**
- 4. Scroll down to GitHub Pages section
- 5. Choose the "master branch" under **Source** and "/ (root)" under **Select folder**
- 6. Press **save** and the website is deployed under the domain https://github.com/rudberga/CI-MS3-calm
+ 1. Firstly, we need to create a .txt file which will contain the project dependencies. Open the project in Gitpod, in the CLI run: 
+
+ `pip3 freeze --local > requirements.txt`
+
+ 2. In Gitpod, create a file named "Procfile". Inside this file you will have to enter: 
+ 
+ `web: python app.py`
+ 
+ This is for Heroku to know which language the application will be running on.
+ 
+ 3. After these two steps you need to commit to Github, this is very important, otherwise Heroku will not be able to deploy the project.
+ 
+ 4. Enter the Heroku website [https://www.heroku.com](https://www.heroku.com/), sign in with your log in credentials
+ 
+ 5. Click button "New" on the dashboard and select "Create new app".
+
+ 6. Enter an unique name of your application -> select your region -> click "Create App".
+ 
+ 7. Back on the applications dashboard in Heroku, select "Settings".
+ 
+ 8. Copy the Heroku git URL under the "App Information".
+ 
+ 9. Go back to Gitpod and into the CLI run 
+ 
+   `git remote add heroku "Paste your Heroku Git URL here"`
+ 
+ 10. Still in the CLI, run 
+ 
+   `heroku ps:scale web=1`
+   
+ 11. Enter the MongoDB website [https://www.mongodb.com](https://www.mongodb.com), sign in with your log in credentials
+ 
+ 12. When logged in and on your dashboard, select the cluster of your database and click "Connect".
+ 
+ 13. Click "Connect your application" among the options that appear.
+ 
+ 15. Choose Python as your driver and the version that you have.
+ 
+ 14. Copy the field under "Add your connection string into your application code".
+
+ 15. Go back to the Heroku website and your applications dashboard -> Click "Settings" -> Click "Reveal Config Vars".
+ 
+ 16. Click "Add" and enter the information below:
+
+`IP` : `0.0.0.0`
+`PORT`: `5000`
+`MONGO_URI` : `PASTE THE CONNECTION STRING COPIED FROM MONGODB`
+
+- IMPORTANT! Inside the connection string, replace `<password>`with your MongoDB Database access password
+- IMPORTANT! Inside the connection string, replace `test` with the name of the database of your project
+
+`SECRET_KEY` : `secret key you have entered in env.py file`
+
+17. Click "More" in the top right corner -> Click "Restart all dynos" and confirm
+
+18. The app is now deployed and you can open it via the button "Open App"
 
 ### Running my project locally
 
