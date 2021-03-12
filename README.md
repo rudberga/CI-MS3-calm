@@ -424,13 +424,49 @@ In order to run the project locally you should firstly enter my repository by th
 2. Choose either **HTTPS**, **SSH** or **GitHub CLI**, then click the copy icon to the right of the link
 3. You will then open the terminal in your IDE
 4. Type `git clone` and then paste the URL you copied
-5. Press **Enter** and you will have created a local clone
+5. Press **Enter** and you will have created a local clone in your IDE
 
 You could also have it open directly in Gitpod if you are using it, see below:
 
 1. Open the repository https://github.com/rudberga/CI-MS3-calm
 2. Click the green **Gitpod** button 
 3. Gitpod will now open up a new workspace with the code from this project
+
+After these basic steps you will have to take further steps in order to make your IDE run the project. This is mainly instructions for Gitpod as that is the IDE that I was using. The steps might have to be adjusted depending on the IDE you use.
+
+1. To be able to run the application, you will have to create a .txt file with all the dependencies. To do this you can simply run below command in the CLI:
+
+`pip3 install -r requirements.txt`
+
+2. Create a "env.py" file, which you should add to your .gitignore as it will contain security information.
+
+3. In order to run this project locally you will have to create a matching DB in Mongo DB.
+ 
+4. Create a new database called "calm" with the collections: 
+- "genres" 
+- "artists"
+- "users"
+- "newsletters"
+
+5. Choose Python as your driver and the version that you have.
+ 
+6. Copy the field under "Add your connection string into your application code".
+
+7. Open your env.py in your IDE and enter this information in this order from top to bottom:
+
+`import os`
+
+`os.environ.setdefault("IP", "0.0.0.0")`
+
+`os.environ.setdefault("PORT", "5000")`
+
+`os.environ.setdefault("SECRET_KEY", "replace this with your own secret key")`
+
+`os.environ.setdefault("MONGO_URI","your mongo URI copied in step 6, replace < password > with your MongoDB Database access password")`
+
+`os.environ.setdefault("MONGO_DBNAME", "calm")`
+
+8. Save the file and it should be ready to run locally.
 
 ## Credits
 
