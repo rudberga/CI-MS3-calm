@@ -344,6 +344,7 @@ Pushed my Python code through PEP8 where only a few minor issues showed up, such
 All of the testing and debugging above have left us with the result below on achieving the goal of our user stories listed in the top of this readme:
 
 | User story | Result |
+| ---------- | ------ |
 | User friendly layout | PASS |
 | Register account, add, edit & delete artists | PASS |
 | Preview of artists before signing up | PASS |
@@ -383,17 +384,20 @@ You could also have it open directly in Gitpod if you are using it, see below:
 
 ### Content
 
-- 
+- The text on all the pages of the website was written by myself
 
 ### Media
-- 
+- Images on this website was imported from [Unsplash](https://unsplash.com/)
+- Logo for this website made by myself through the editor in [Canva](https://www.canva.com/)
 
 ### Code
 
 I have modified these code snippets in order for them to work in my project.
-- EXAMPLE: Hovering effect on links in top 3 list: [CSS Tricks](https://css-tricks.com/having-fun-with-link-hover-effects)
+- Hovering over social links and icons: [Ian Lunn](https://ianlunn.github.io/Hover/#effects)
+- Alert boxes: [pradeep1616](https://codepen.io/pradeep1616/pen/LxaRRB)
+- Partly covered backgrounds: [CSS Tricks](https://css-tricks.com/forums/topic/css-background-with-2-colors)
+                             & [G-Cyrillus](https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background)
 
+### Disclaimer
 
-### Acknowledgements
-
-- I want to thank my mentor **Nishant Kumar** for the support and advice throughout the project
+This is a project for the course Full Stack Web Development diploma with Code Institute, it is not for commercial use. If you find any of your content that you want removed, please contact me directly via my e-mail rudberg@pm.me.
