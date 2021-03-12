@@ -397,6 +397,7 @@ I have modified these code snippets in order for them to work in my project.
 - Alert boxes: [pradeep1616](https://codepen.io/pradeep1616/pen/LxaRRB)
 - Partly covered backgrounds: [CSS Tricks](https://css-tricks.com/forums/topic/css-background-with-2-colors)
                              & [G-Cyrillus](https://stackoverflow.com/questions/38398434/half-image-half-color-responsive-background)
+- Capitalize first letter in jinja template: [Shubham Jain](https://shubhamjain.co/til/capitalizing-first-letter-in-jinja)
 
 ### Disclaimer
 
