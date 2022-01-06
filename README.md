@@ -7,7 +7,10 @@
 
 This website is developed for users who wants to find artists who makes calm music. Maybe you need it for a rainy day, when you have to focus on studying or just to fall asleep in the evening. For any reason there is, this website will help the user to find new artists and contribute by adding their own. It is based on user contributions and you will be able to read others artist cards as well as add, delete and edit your own posts.
 
-[Link to deployed website!](https://calm-music-project.herokuapp.com/)
+<!---
+Commented out link while working on deployment issues.
+[Link to deployed website!](https://calm-music-project.herokuapp.com/) 
+-->
  
 ## UX
 
