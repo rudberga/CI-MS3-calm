@@ -491,3 +491,5 @@ I have modified these code snippets in order for them to work in my project.
 ### Disclaimer
 
 This is a project for the course Full Stack Web Development diploma with Code Institute, it is not for commercial use. If you find any of your content that you want removed, please contact me directly via my e-mail rudberg@pm.me.
+
+Test
